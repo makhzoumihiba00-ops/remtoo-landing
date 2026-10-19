@@ -18,6 +18,11 @@
     @apply mx-auto w-full max-w-[1200px] px-8 max-md:px-5;
   }
 
+  /* Full-bleed wrapper: no max-width, generous side padding */
+  .wrap-wide {
+    @apply max-w-none lg:px-12 xl:px-16;
+  }
+
   /* Buttons */
   .btn {
     @apply inline-flex cursor-pointer items-center justify-center gap-2.5
