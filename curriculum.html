@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum — Remtoo</title>
+    <meta
+      name="description"
+      content="The Remtoo English curriculum: five CEFR levels from A1 to C1, 52 units and 570+ ready-to-teach lessons with videos, vocabulary, grammar, speaking, activities, practice and review."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='bold' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script type="module" src="./src/js/main.js" defer></script>
+  </head>
+  <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
+    <!-- ================= Header ================= -->
+    <header class="relative border-b border-slate-100 bg-white py-4 lg:py-5">
+      <div class="wrap flex items-center gap-4 lg:gap-5 xl:gap-8">
+        <a
+          class="flex shrink-0 items-center gap-2.5"
+          href="index.html"
+          aria-label="Remtoo home"
+        >
+          <span
+            class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+              aria-hidden="true"
+              >R</span
+          >
+          <span class="text-[1.2rem] font-extrabold tracking-tight text-slate-900 xl:text-[1.35rem]"
+            >Remtoo</span
+          >
+        </a>
+
+        <nav
+          id="site-nav"
+          aria-label="Main navigation"
+          class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-blue-700 transition-colors hover:bg-slate-50 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="curriculum.html"
+            aria-current="page"
+            >Curriculum</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="whats-included.html"
+            >What&rsquo;s Included</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-schools.html"
+            >For Schools</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-teachers.html"
+            >For Teachers</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="pricing.html"
+            >Pricing</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="free-sample.html"
+            >Free Sample</a
+          >
+        </nav>
+
+        <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0">
+          <a
+            class="btn btn-primary hidden px-5 py-2.5 text-sm sm:inline-flex"
+            href="for-schools.html"
+            >Book a Demo</a
+          >
+          <button
+            id="nav-toggle"
+            class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-slate-900 lg:hidden"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <svg
+              class="icon-open size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <svg
+              class="icon-close size-5 hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= Page hero ================= -->
+      <section class="relative overflow-hidden pt-12 pb-14 lg:pt-16 lg:pb-16">
+        <div
+          class="pointer-events-none absolute -top-24 -right-24 size-[380px] rounded-full bg-[#EAF2FA] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-28 -left-24 size-[340px] rounded-full bg-[#E6F5EE] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <div class="wrap relative z-10 text-center">
+          <p class="text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            The Curriculum
+          </p>
+          <h1
+            class="mx-auto mt-4 max-w-3xl text-[clamp(2rem,4.2vw,3.1rem)] leading-[1.1] font-extrabold tracking-tight text-slate-900"
+          >
+            A Structured Journey <span class="text-blue-600">from A1 to C1.</span>
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed">
+            Five CEFR levels, 52 units and 570+ ready-to-teach lessons &mdash; each unit
+            follows the same clear structure, so you always know what to teach next.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a class="btn btn-primary px-6 py-3.5 text-[0.95rem]" href="free-sample.html"
+              >Get Free Sample</a
+            >
+            <a class="btn btn-ghost px-6 py-3.5 text-[0.95rem]" href="whats-included.html"
+              >What&rsquo;s Included</a
+            >
+          </div>
+
+          <div
+            class="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4"
+          >
+            <div class="flex flex-col gap-0.5">
+              <span class="text-3xl font-extrabold tracking-tight text-slate-900">5</span>
+              <span class="text-sm text-slate-500">CEFR levels</span>
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <span class="text-3xl font-extrabold tracking-tight text-slate-900">52</span>
+              <span class="text-sm text-slate-500">Units</span>
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <span class="text-3xl font-extrabold tracking-tight text-slate-900">570+</span>
+              <span class="text-sm text-slate-500">Lessons</span>
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <span class="text-3xl font-extrabold tracking-tight text-slate-900">7</span>
+              <span class="text-sm text-slate-500">Components per unit</span>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <p class="text-sm font-semibold text-slate-900">Every unit includes</p>
+            <div class="mt-3.5 flex flex-wrap items-center justify-center gap-2.5">
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
+                Video
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-violet-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>
+                Vocabulary
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+                Grammar
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg>
+                Speaking
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+                Activities
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5"/></svg>
+                Practice
+              </span>
+              <span class="flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-2 text-xs font-semibold text-slate-700">
+                <svg class="size-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                Review
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Level jump nav ================= -->
+      <section class="bg-linear-to-b from-white to-emerald-50/70 py-12 lg:py-14">
+        <div class="wrap">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Choose a level
+          </p>
+          <div class="mt-6 flex items-center justify-center gap-1.5 sm:gap-3">
+            <a
+              href="#a1"
+              class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#DCF3E8] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5"
+            >
+              <svg class="size-7 text-emerald-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 20h10" /><path d="M10 20c5.5-2.5.8-6.4 3-10" />
+                <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+                <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.2-3 0-4.3.6-4.9 1.6z" />
+              </svg>
+              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A1</span>
+              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Beginner</span>
+            </a>
+            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            <a
+              href="#a2"
+              class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#DBEAFE] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5"
+            >
+              <svg class="size-7 text-blue-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" /><path d="M8 17V9" /><path d="M13 17V5" /><path d="M18 17v-3" />
+              </svg>
+              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A2</span>
+              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Elementary</span>
+            </a>
+            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            <a
+              href="#b1"
+              class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#FDF3C7] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5"
+            >
+              <svg class="size-7 text-amber-700 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" /><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B1</span>
+              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Intermediate</span>
+            </a>
+            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            <a
+              href="#b2"
+              class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#FDE2E0] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5"
+            >
+              <svg class="size-7 text-red-500 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B2</span>
+              <span class="text-center text-[10px] text-slate-500 sm:text-xs">
+                <span class="sm:hidden">Upper Int.</span>
+                <span class="hidden sm:inline">Upper Intermediate</span>
+              </span>
+            </a>
+            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            <a
+              href="#c1"
+              class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#EDE7FD] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5"
+            >
+              <svg class="size-7 text-violet-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 20 6-11 4 7 3-4 5 8z" /><path d="M9 5v4" /><path d="M7 7h4" />
+              </svg>
+              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">C1</span>
+              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Advanced</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= A1 ================= -->
+      <section id="a1" class="scroll-mt-24 border-t border-slate-100 py-14 lg:py-16">
+        <div class="wrap">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#DCF3E8] text-emerald-600">
+              <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 20h10" /><path d="M10 20c5.5-2.5.8-6.4 3-10" />
+                <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+                <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.2-3 0-4.3.6-4.9 1.6z" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">
+                A1 <span class="font-semibold text-slate-300">&middot;</span> Beginner
+              </h2>
+              <p class="mt-1 max-w-2xl text-sm text-slate-500">
+                First steps in English &mdash; everyday words, simple sentences and
+                confidence-building speaking.
+                <strong class="font-semibold text-slate-700">12 units &middot; 120 lessons</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 1</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Meet &amp; Greet</h3>
+              <p class="mt-1 text-xs text-slate-500">Greetings &middot; Introductions</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 2</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">My Family</h3>
+              <p class="mt-1 text-xs text-slate-500">Family members &middot; Possessives</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 3</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Numbers &amp; Time</h3>
+              <p class="mt-1 text-xs text-slate-500">Numbers &middot; Telling the time</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 4</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Food &amp; Drink</h3>
+              <p class="mt-1 text-xs text-slate-500">Food words &middot; Likes and dislikes</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 5</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Daily Routine</h3>
+              <p class="mt-1 text-xs text-slate-500">Present simple &middot; Adverbs of frequency</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 6</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">My Home</h3>
+              <p class="mt-1 text-xs text-slate-500">Rooms &middot; Furniture &middot; Prepositions</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 7</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Clothes &amp; Colors</h3>
+              <p class="mt-1 text-xs text-slate-500">Clothing &middot; Descriptions</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 8</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">In Town</h3>
+              <p class="mt-1 text-xs text-slate-500">Places &middot; Simple directions</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 9</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Weather &amp; Seasons</h3>
+              <p class="mt-1 text-xs text-slate-500">Weather words &middot; Months</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 10</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Hobbies</h3>
+              <p class="mt-1 text-xs text-slate-500">Free time &middot; Can / can&rsquo;t</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 11</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">School Life</h3>
+              <p class="mt-1 text-xs text-slate-500">School objects &middot; Subjects</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 12</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">My World</h3>
+              <p class="mt-1 text-xs text-slate-500">Review &middot; Culture project</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= A2 ================= -->
+      <section id="a2" class="scroll-mt-24 border-t border-slate-100 bg-slate-50/70 py-14 lg:py-16">
+        <div class="wrap">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#DBEAFE] text-blue-600">
+              <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" /><path d="M8 17V9" /><path d="M13 17V5" /><path d="M18 17v-3" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">
+                A2 <span class="font-semibold text-slate-300">&middot;</span> Elementary
+              </h2>
+              <p class="mt-1 max-w-2xl text-sm text-slate-500">
+                Everyday communication &mdash; past and future tenses, practical topics and
+                short conversations.
+                <strong class="font-semibold text-slate-700">12 units &middot; 120 lessons</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 1</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">About Me</h3>
+              <p class="mt-1 text-xs text-slate-500">Past simple &middot; Life stories</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 2</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Free Time</h3>
+              <p class="mt-1 text-xs text-slate-500">Hobbies &middot; Comparatives</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 3</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Let&rsquo;s Go Shopping</h3>
+              <p class="mt-1 text-xs text-slate-500">Shopping &middot; Money</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 4</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Travel &amp; Directions</h3>
+              <p class="mt-1 text-xs text-slate-500">Transport &middot; Asking the way</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 5</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Last Weekend</h3>
+              <p class="mt-1 text-xs text-slate-500">Past continuous &middot; Narrating</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 6</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Health &amp; Body</h3>
+              <p class="mt-1 text-xs text-slate-500">Illness &middot; Giving advice</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 7</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Work &amp; Jobs</h3>
+              <p class="mt-1 text-xs text-slate-500">Jobs &middot; Present perfect</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 8</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Future Plans</h3>
+              <p class="mt-1 text-xs text-slate-500">Going to &middot; Will</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 9</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Rules &amp; Advice</h3>
+              <p class="mt-1 text-xs text-slate-500">Must &middot; Should</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 10</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Feelings</h3>
+              <p class="mt-1 text-xs text-slate-500">Emotions &middot; Adjectives</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 11</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Nature &amp; Environment</h3>
+              <p class="mt-1 text-xs text-slate-500">Animals &middot; Nature words</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 12</span>
+                <span class="text-[11px] font-semibold text-slate-400">10 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">A2 Review</h3>
+              <p class="mt-1 text-xs text-slate-500">Consolidation &middot; Project</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= B1 ================= -->
+      <section id="b1" class="scroll-mt-24 border-t border-slate-100 py-14 lg:py-16">
+        <div class="wrap">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#FDF3C7] text-amber-700">
+              <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" /><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">
+                B1 <span class="font-semibold text-slate-300">&middot;</span> Intermediate
+              </h2>
+              <p class="mt-1 max-w-2xl text-sm text-slate-500">
+                Independence &mdash; opinions, longer conversations and real-world topics.
+                <strong class="font-semibold text-slate-700">10 units &middot; 120 lessons</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 1</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Relationships</h3>
+              <p class="mt-1 text-xs text-slate-500">Character &middot; Relative clauses</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 2</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Learning &amp; Education</h3>
+              <p class="mt-1 text-xs text-slate-500">Schools &middot; First conditional</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 3</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Digital Life</h3>
+              <p class="mt-1 text-xs text-slate-500">Technology &middot; Second conditional</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 4</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Media &amp; News</h3>
+              <p class="mt-1 text-xs text-slate-500">Headlines &middot; Reported speech</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 5</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Culture &amp; the Arts</h3>
+              <p class="mt-1 text-xs text-slate-500">Art &middot; Passive voice</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 6</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Sport &amp; Fitness</h3>
+              <p class="mt-1 text-xs text-slate-500">Sport &middot; Modals of deduction</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 7</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Money &amp; Business</h3>
+              <p class="mt-1 text-xs text-slate-500">Work &middot; Business emails</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 8</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Travel Stories</h3>
+              <p class="mt-1 text-xs text-slate-500">Narrative tenses &middot; Airports</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 9</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Society &amp; Volunteering</h3>
+              <p class="mt-1 text-xs text-slate-500">Community &middot; Present perfect continuous</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 10</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">B1 Review</h3>
+              <p class="mt-1 text-xs text-slate-500">Consolidation &middot; Debate project</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= B2 ================= -->
+      <section id="b2" class="scroll-mt-24 border-t border-slate-100 bg-slate-50/70 py-14 lg:py-16">
+        <div class="wrap">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#FDE2E0] text-red-500">
+              <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">
+                B2 <span class="font-semibold text-slate-300">&middot;</span> Upper Intermediate
+              </h2>
+              <p class="mt-1 max-w-2xl text-sm text-slate-500">
+                Fluency &mdash; complex ideas, argumentation and confident writing.
+                <strong class="font-semibold text-slate-700">10 units &middot; 120 lessons</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 1</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Global Issues</h3>
+              <p class="mt-1 text-xs text-slate-500">Poverty &middot; Third conditional</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 2</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Science &amp; Innovation</h3>
+              <p class="mt-1 text-xs text-slate-500">Science words &middot; Conditionals review</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 3</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Mind &amp; Behaviour</h3>
+              <p class="mt-1 text-xs text-slate-500">Psychology &middot; Causative</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 4</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Law &amp; Justice</h3>
+              <p class="mt-1 text-xs text-slate-500">Crime &middot; Legal words</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 5</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Consumer Society</h3>
+              <p class="mt-1 text-xs text-slate-500">Marketing &middot; Persuasive language</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 6</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">The Environment</h3>
+              <p class="mt-1 text-xs text-slate-500">Climate &middot; Describing data</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 7</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">History &amp; Change</h3>
+              <p class="mt-1 text-xs text-slate-500">History &middot; Past modals</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 8</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">The Art of Argument</h3>
+              <p class="mt-1 text-xs text-slate-500">Debating &middot; Linking words</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 9</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Literature &amp; Film</h3>
+              <p class="mt-1 text-xs text-slate-500">Analysis &middot; Review writing</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 10</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">B2 Review</h3>
+              <p class="mt-1 text-xs text-slate-500">Consolidation &middot; Research project</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= C1 ================= -->
+      <section id="c1" class="scroll-mt-24 border-t border-slate-100 py-14 lg:py-16">
+        <div class="wrap">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="grid size-14 shrink-0 place-items-center rounded-2xl bg-[#EDE7FD] text-violet-600">
+              <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 20 6-11 4 7 3-4 5 8z" /><path d="M9 5v4" /><path d="M7 7h4" />
+              </svg>
+            </span>
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">
+                C1 <span class="font-semibold text-slate-300">&middot;</span> Advanced
+              </h2>
+              <p class="mt-1 max-w-2xl text-sm text-slate-500">
+                Mastery &mdash; nuanced communication, academic and professional English.
+                <strong class="font-semibold text-slate-700">8 units &middot; 96 lessons</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 1</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Professional Communication</h3>
+              <p class="mt-1 text-xs text-slate-500">Meetings &middot; Negotiation</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 2</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Academic Writing</h3>
+              <p class="mt-1 text-xs text-slate-500">Essays &middot; Cohesion</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 3</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Public Speaking</h3>
+              <p class="mt-1 text-xs text-slate-500">Rhetoric &middot; Presentations</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 4</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Idioms &amp; Nuance</h3>
+              <p class="mt-1 text-xs text-slate-500">Idioms &middot; Register</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 5</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Media Literacy</h3>
+              <p class="mt-1 text-xs text-slate-500">Bias &middot; Critical reading</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 6</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Research Skills</h3>
+              <p class="mt-1 text-xs text-slate-500">Sources &middot; Citation</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 7</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Storytelling &amp; Craft</h3>
+              <p class="mt-1 text-xs text-slate-500">Narrative devices &middot; Creative writing</p>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Unit 8</span>
+                <span class="text-[11px] font-semibold text-slate-400">12 lessons</span>
+              </div>
+              <h3 class="mt-1.5 text-[15px] font-bold text-slate-900">Capstone Project</h3>
+              <p class="mt-1 text-xs text-slate-500">Portfolio &middot; Final assessment</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA band ================= -->
+      <section class="py-14 lg:py-16">
+        <div class="wrap">
+          <div class="relative overflow-hidden rounded-[28px] bg-blue-600 px-8 py-12 text-center shadow-xl shadow-blue-600/25 sm:px-12 lg:py-14">
+            <div class="pointer-events-none absolute -top-20 -left-16 size-64 rounded-full bg-white/10" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute -right-20 -bottom-24 size-72 rounded-full bg-white/10" aria-hidden="true"></div>
+            <div class="relative">
+              <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+                Try Remtoo with your class this week
+              </h2>
+              <p class="mx-auto mt-3 max-w-xl text-blue-100">
+                Download a free sample lesson pack and see how a complete,
+                ready-to-teach unit feels in your classroom.
+              </p>
+              <div class="mt-7 flex flex-wrap items-center justify-center gap-4">
+                <a
+                  class="btn bg-white px-6 py-3.5 text-[0.95rem] text-blue-700 shadow-lg hover:-translate-y-px hover:bg-blue-50"
+                  href="free-sample.html"
+                  >Get Free Sample</a
+                >
+                <a
+                  class="btn border-white/60 bg-transparent px-6 py-3.5 text-[0.95rem] text-white hover:-translate-y-px hover:border-white hover:bg-white/10"
+                  href="for-schools.html"
+                  >Book a Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
