@@ -21,407 +21,616 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <script type="module" src="./src/js/main.js" defer></script>
   </head>
-  <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
-    <!-- ================= Header ================= -->
-    <header class="relative border-b border-slate-100 bg-white py-4 lg:py-5">
-      <div class="wrap flex items-center gap-4 lg:gap-5 xl:gap-8">
-        <a
-          class="flex shrink-0 items-center gap-2.5"
-          href="index.html"
-          aria-label="Remtoo home"
-        >
-          <span
-            class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
-              aria-hidden="true"
-              >R</span
-          >
-          <span class="text-[1.2rem] font-extrabold tracking-tight text-slate-900 xl:text-[1.35rem]"
-            >Remtoo</span
-          >
-        </a>
+  <body class="overflow-x-clip bg-[#EAF3FB] font-sans text-slate-600 antialiased">
+    <!-- Page background decorations -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-32 -left-32 size-[560px] rounded-full bg-[#D6E8F7]/70 blur-3xl"></div>
+      <div class="absolute top-1/2 -right-40 size-[620px] rounded-full bg-[#D9F2E4]/60 blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/3 size-[480px] rounded-full bg-[#DBEAFE]/50 blur-3xl"></div>
+    </div>
 
-        <nav
-          id="site-nav"
-          aria-label="Main navigation"
-          class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
-        >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="curriculum.html"
-            >Curriculum</a
-          >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="whats-included.html"
-            >What&rsquo;s Included</a
-          >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="for-schools.html"
-            >For Schools</a
-          >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="for-teachers.html"
-            >For Teachers</a
-          >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="pricing.html"
-            >Pricing</a
-          >
-          <a
-            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
-            href="free-sample.html"
-            >Free Sample</a
-          >
-        </nav>
-
-        <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0">
-          <a
-            class="btn btn-primary hidden px-5 py-2.5 text-sm sm:inline-flex"
-            href="for-schools.html"
-            >Book a Demo</a
-          >
-          <button
-            id="nav-toggle"
-            class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-slate-900 lg:hidden"
-            type="button"
-            aria-label="Toggle menu"
-            aria-expanded="false"
-            aria-controls="site-nav"
-          >
-            <svg
-              class="icon-open size-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.2"
-              stroke-linecap="round"
+    <!-- Full-width rounded page card -->
+    <div class="relative mx-auto w-full max-w-[1780px] px-3 pt-3 pb-8 sm:px-5 sm:pt-5">
+      <div class="overflow-hidden rounded-[28px] bg-white shadow-[0_24px_70px_-20px_rgba(15,27,76,0.18)]">
+        <!-- ================= Header ================= -->
+        <header class="relative border-b border-[#E3EDF5] py-4 lg:py-5">
+          <div class="mx-auto flex w-full max-w-[1600px] items-center gap-4 px-6 sm:px-8 lg:gap-5 xl:gap-8 lg:px-12">
+            <a
+              class="flex shrink-0 items-center gap-2.5"
+              href="index.html"
+              aria-label="Remtoo home"
             >
-              <line x1="4" y1="7" x2="20" y2="7" />
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <line x1="4" y1="17" x2="20" y2="17" />
-            </svg>
-            <svg
-              class="icon-close size-5 hidden"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.2"
-              stroke-linecap="round"
-            >
-              <line x1="6" y1="6" x2="18" y2="18" />
-              <line x1="18" y1="6" x2="6" y2="18" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- ================= Hero ================= -->
-      <section class="relative overflow-hidden pt-10 pb-24 sm:pt-14 lg:pt-20 lg:pb-32">
-        <!-- Decorative blobs -->
-        <div
-          class="pointer-events-none absolute -top-24 -right-24 size-[420px] rounded-full bg-[#EAF2FA] opacity-80 blur-3xl"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="pointer-events-none absolute top-1/3 -left-28 size-[380px] rounded-full bg-[#E6F5EE] opacity-80 blur-3xl"
-          aria-hidden="true"
-        ></div>
-
-        <div class="wrap relative z-10 grid items-center gap-14 lg:grid-cols-[1.08fr_1fr] lg:gap-10 xl:gap-16">
-          <!-- Left: copy -->
-          <div>
-            <p class="text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
-              Teach English. Create Brighter Futures.
-            </p>
-
-            <h1
-              class="mt-4 text-[clamp(2.2rem,4.6vw,3.5rem)] leading-[1.07] font-extrabold tracking-tight text-slate-900"
-            >
-              A Complete<br />
-              English Curriculum.<br />
-              <span class="text-blue-600">Ready to Teach.</span>
-            </h1>
-
-            <p class="mt-5 text-lg font-semibold text-slate-900 sm:text-xl">
-              Everything teachers and schools need to teach English from A1 to C1.
-            </p>
-            <p class="mt-3 max-w-[34rem] leading-relaxed">
-              Ready-to-teach lessons, videos, activities, vocabulary, exercises,
-              assessments and more &mdash; all in one structured curriculum.
-            </p>
-
-            <div class="mt-8 flex flex-wrap items-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
-              <a
-                class="btn btn-primary px-6 py-3.5 text-[0.95rem] max-[480px]:w-full"
-                href="free-sample.html"
+              <span
+                class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+                aria-hidden="true"
+                >R</span
               >
-                Explore Free Lessons
-                <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="13 6 19 12 13 18" />
-                </svg>
-              </a>
+              <span class="text-[1.2rem] font-extrabold tracking-tight text-[#0F1B4C] xl:text-[1.35rem]"
+                >Remtoo</span
+              >
+            </a>
+
+            <nav
+              id="site-nav"
+              aria-label="Main navigation"
+              class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+            >
               <a
-                class="btn btn-ghost px-6 py-3.5 text-[0.95rem] max-[480px]:w-full"
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
                 href="curriculum.html"
-                >View Curriculum</a
+                >Curriculum</a
               >
-            </div>
+              <a
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+                href="whats-included.html"
+                >What&rsquo;s Included</a
+              >
+              <a
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+                href="for-schools.html"
+                >For Schools</a
+              >
+              <a
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+                href="for-teachers.html"
+                >For Teachers</a
+              >
+              <a
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+                href="free-sample.html"
+                >Free Sample</a
+              >
+              <a
+                class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-[#0F1B4C]/80 transition-colors hover:bg-slate-50 hover:text-[#0F1B4C] lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+                href="pricing.html"
+                >Pricing</a
+              >
+            </nav>
 
-            <ul class="mt-7 flex list-none flex-wrap gap-x-6 gap-y-2.5">
-              <li class="flex items-center gap-2 text-sm font-medium text-slate-500">
-                <span class="grid size-5 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
-                  <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
-                </span>
-                No credit card required
-              </li>
-              <li class="flex items-center gap-2 text-sm font-medium text-slate-500">
-                <span class="grid size-5 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
-                  <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
-                </span>
-                A1&ndash;C1 levels
-              </li>
-              <li class="flex items-center gap-2 text-sm font-medium text-slate-500">
-                <span class="grid size-5 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
-                  <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
-                </span>
-                Trusted by teachers and schools
-              </li>
-            </ul>
-          </div>
-
-          <!-- Right: photo + overlapping cards -->
-          <div class="relative mx-auto w-full max-w-[520px] px-5 py-8 sm:px-8" aria-hidden="true">
-            <!-- Handwritten annotation -->
-            <div class="absolute -top-1 right-4 hidden lg:block">
-              <p class="font-hand rotate-[6deg] text-2xl leading-none text-blue-600">
-                Ready for your next class!
-              </p>
-              <svg class="mt-1 ml-auto w-14 text-blue-500" viewBox="0 0 56 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M50 4 C 36 22, 22 26, 8 33" />
-                <path d="M14 27 L7 34 L16 36" />
-              </svg>
-            </div>
-
-            <!-- Photo -->
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-              alt="English teacher smiling in a classroom"
-              class="aspect-[4/5] w-full rounded-[26px] object-cover"
-            />
-
-            <!-- Lesson card -->
-            <div class="absolute top-0 left-0 w-[250px] rounded-2xl border border-slate-100 bg-white p-3.5 shadow-[0_20px_50px_-15px_rgba(15,23,42,0.25)] sm:w-[290px]">
-              <p class="text-[11px] font-bold tracking-wider text-blue-600 uppercase">A1 &ndash; Lesson 1</p>
-              <h3 class="mt-0.5 text-base font-bold text-slate-900">Meet &amp; Greet</h3>
-
-              <div class="relative mt-2.5">
-                <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
-                  alt=""
-                  class="aspect-video w-full rounded-xl object-cover"
-                />
-                <span class="absolute inset-0 grid place-items-center">
-                  <span class="grid size-10 place-items-center rounded-full bg-blue-600 text-white shadow-lg shadow-blue-600/40">
-                    <svg class="ml-0.5 size-4" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
-                  </span>
-                </span>
-              </div>
-
-              <div class="mt-3 grid grid-cols-2 gap-x-2 gap-y-2">
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-blue-100 text-blue-600">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Video</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-violet-100 text-violet-600">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" />
-                      <path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Vocabulary</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-amber-100 text-amber-600">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Grammar</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-green-100 text-green-600">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <rect x="9" y="2" width="6" height="12" rx="3" />
-                      <path d="M5 10v1a7 7 0 0 0 14 0v-1" />
-                      <line x1="12" y1="18" x2="12" y2="22" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Speaking</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-red-100 text-red-500">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="9" />
-                      <circle cx="12" cy="12" r="5" />
-                      <circle cx="12" cy="12" r="1" fill="currentColor" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Activities</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-teal-100 text-teal-600">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="4 12.5 9.5 18 20 6.5" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Practice</span>
-                </div>
-                <div class="col-span-2 flex items-center gap-1.5 border-t border-slate-100 pt-2">
-                  <span class="grid size-6 shrink-0 place-items-center rounded-md bg-slate-100 text-slate-500">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                      <path d="M3 3v5h5" />
-                    </svg>
-                  </span>
-                  <span class="text-[11px] font-medium text-slate-600">Review</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Callout card -->
-            <div class="absolute bottom-0 left-0 flex items-center gap-3.5 rounded-[20px] bg-[#DFF3E7] py-3.5 pr-6 pl-4 shadow-[0_18px_40px_-16px_rgba(21,128,61,0.4)]">
-              <span class="grid size-10 shrink-0 place-items-center rounded-full bg-white text-amber-500 shadow-sm">
-                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 18h6" />
-                  <path d="M10 22h4" />
-                  <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Z" />
+            <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0 lg:gap-4">
+              <a
+                class="hidden rounded-full px-4 py-2.5 text-sm font-semibold text-[#0F1B4C] transition-colors hover:bg-slate-50 md:inline-flex"
+                href="pricing.html"
+                >Log in</a
+              >
+              <a
+                class="btn btn-primary rounded-full px-5 py-2.5 text-sm"
+                href="for-schools.html"
+                >Book a Demo</a
+              >
+              <button
+                id="nav-toggle"
+                class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-[#0F1B4C] lg:hidden"
+                type="button"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                aria-controls="site-nav"
+              >
+                <svg
+                  class="icon-open size-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                >
+                  <line x1="4" y1="7" x2="20" y2="7" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="17" x2="20" y2="17" />
                 </svg>
-              </span>
-              <div class="space-y-0.5 text-sm leading-snug font-semibold text-green-900">
-                <p>Less preparation.</p>
-                <p>More teaching.</p>
-                <p>Happier students.</p>
+                <svg
+                  class="icon-close size-5 hidden"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                >
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- ================= Hero ================= -->
+        <section class="relative pt-10 pb-16 sm:pt-12 lg:pt-14 lg:pb-20">
+          <!-- Decorative blobs behind the photo -->
+          <div
+            class="pointer-events-none absolute top-10 -left-24 hidden size-[460px] rounded-[58%_42%_55%_45%/45%_55%_42%_58%] bg-[#D6E8F7] opacity-70 blur-2xl lg:block"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="pointer-events-none absolute bottom-0 left-1/4 hidden size-[380px] rounded-[45%_55%_42%_58%/58%_42%_55%_45%] bg-[#D9F2E4] opacity-70 blur-2xl lg:block"
+            aria-hidden="true"
+          ></div>
+
+          <div
+            class="relative z-10 mx-auto grid w-full max-w-[1600px] items-center gap-14 px-6 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10 lg:px-12 xl:gap-16"
+          >
+            <!-- Left: photo + overlapping UI cards -->
+            <div class="relative">
+              <!-- Handwritten annotation -->
+              <div class="absolute -top-7 right-2 z-20 hidden text-right lg:block xl:right-6">
+                <p class="font-hand rotate-[4deg] text-[1.55rem] leading-none text-[#2B6CF6]">
+                  Real-world English for real progress.
+                </p>
+                <svg
+                  class="mt-1.5 ml-auto w-16 text-blue-500"
+                  viewBox="0 0 64 44"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M58 6 C 44 26, 26 32, 10 38" />
+                  <path d="M17 31 L9 39 L19 41" />
+                </svg>
+              </div>
+
+              <!-- Dot grid: top-left of lesson card -->
+              <div
+                class="absolute -top-3 left-[calc(50%-330px)] z-0 hidden size-[76px] bg-[radial-gradient(#0f1b4c3d_1.5px,transparent_1.6px)] [background-size:14px_14px] xl:block"
+                aria-hidden="true"
+              ></div>
+
+              <!-- Photo -->
+              <img
+                src="./assets/images/teacher.jpg"
+                alt="Smiling English teacher with materials in her arms"
+                class="relative z-[1] mx-auto aspect-[4/5] w-full max-w-[500px] rounded-[36px] object-cover"
+                width="500"
+                height="625"
+              />
+
+              <!-- Dot grid: bottom-right of photo -->
+              <div
+                class="absolute right-[6%] bottom-[22%] z-0 hidden size-[64px] bg-[radial-gradient(#0f1b4c33_1.5px,transparent_1.6px)] [background-size:14px_14px] lg:block"
+                aria-hidden="true"
+              ></div>
+
+              <!-- Sparkles near the shoulder -->
+              <svg
+                class="absolute top-[24%] right-[10%] z-0 hidden size-8 text-blue-400 lg:block"
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M16 4v6" /><path d="M16 22v6" />
+                <path d="M4 16h6" /><path d="M22 16h6" />
+                <path d="M8 8l3.5 3.5" /><path d="M20.5 20.5 24 24" />
+              </svg>
+
+              <!-- Mint pill card -->
+              <div
+                class="absolute top-[40%] z-20 -left-1 flex items-center gap-3 rounded-2xl bg-[#DFF4E8] py-3 pr-5 pl-4 shadow-[0_16px_36px_-14px_rgba(16,122,87,0.45)] max-lg:hidden"
+              >
+                <span class="grid size-9 shrink-0 place-items-center rounded-full bg-white text-emerald-600 shadow-sm">
+                  <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="20" x2="6" y2="12" />
+                    <line x1="12" y1="20" x2="12" y2="6" />
+                    <line x1="18" y1="20" x2="18" y2="14" />
+                  </svg>
+                </span>
+                <p class="max-w-[150px] text-sm leading-snug font-bold text-emerald-900">
+                  Happier students.<br />More confident teachers.
+                </p>
+              </div>
+
+              <!-- Lesson card -->
+              <div
+                class="z-20 mt-6 w-full rounded-3xl border border-[#E3EDF5] bg-white p-4 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.28)] sm:mx-auto sm:max-w-[420px] lg:absolute lg:top-0 lg:left-0 lg:mt-0 lg:w-[280px] lg:max-w-none xl:-top-4 xl:-left-4 xl:w-[300px]"
+              >
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <p class="text-[11px] font-bold tracking-[0.12em] text-slate-400 uppercase">A1 &ndash; Lesson 1</p>
+                    <h3 class="mt-0.5 text-[1.05rem] font-bold text-[#0F1B4C]">Meet &amp; Greet</h3>
+                  </div>
+                  <span class="grid size-9 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600">
+                    <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M8 6.5h10M8 12h10M8 17.5h6" />
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="relative mt-3">
+                  <img
+                    src="./assets/images/lesson-thumb.jpg"
+                    alt="Students greeting each other in an English lesson video"
+                    class="aspect-video w-full rounded-2xl object-cover"
+                    width="640"
+                    height="427"
+                    loading="lazy"
+                  />
+                  <span class="absolute inset-0 grid place-items-center">
+                    <span class="grid size-11 place-items-center rounded-full bg-white/95 text-blue-600 shadow-lg shadow-blue-900/20">
+                      <svg class="ml-0.5 size-5" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="mt-3.5 grid grid-cols-2 gap-x-2 gap-y-2">
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-green-100 text-green-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Video</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-green-100 text-green-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                      </svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Vocabulary</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-orange-100 text-orange-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                      </svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Grammar</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-blue-100 text-blue-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="2" width="6" height="12" rx="3" />
+                        <path d="M5 10v1a7 7 0 0 0 14 0v-1" />
+                        <line x1="12" y1="18" x2="12" y2="22" />
+                      </svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Speaking</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-emerald-50 text-emerald-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Activities</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-emerald-50 text-emerald-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Practice</span>
+                  </div>
+                  <div class="col-span-2 flex items-center gap-1.5 border-t border-slate-100 pt-2">
+                    <span class="grid size-6 shrink-0 place-items-center rounded-md bg-emerald-50 text-emerald-600">
+                      <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    </span>
+                    <span class="text-[12px] font-medium text-slate-600">Review</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progress card -->
+              <div
+                class="z-20 mt-4 w-full rounded-3xl border border-[#E3EDF5] bg-white p-4 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.24)] sm:mx-auto sm:max-w-[420px] lg:absolute lg:bottom-24 lg:left-0 lg:mt-0 lg:w-[240px] lg:max-w-none xl:-left-8"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <p class="text-sm font-bold text-[#0F1B4C]">Lesson Progress</p>
+                  <p class="text-sm font-extrabold text-emerald-500">2/4</p>
+                </div>
+                <p class="mt-0.5 text-xs font-medium text-slate-400">Unit 3 &middot; Everyday Life</p>
+
+                <div class="mt-2.5 h-2 overflow-hidden rounded-full bg-slate-100">
+                  <div class="h-full w-1/2 rounded-full bg-linear-to-r from-emerald-400 to-emerald-500"></div>
+                </div>
+
+                <div class="mt-3 grid grid-cols-2 gap-x-2 gap-y-2 text-[12px] font-medium text-slate-600">
+                  <span class="flex items-center gap-1.5">
+                    <span class="grid size-4.5 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+                      <svg class="size-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    </span>
+                    Watch
+                  </span>
+                  <span class="flex items-center gap-1.5">
+                    <span class="grid size-4.5 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+                      <svg class="size-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    </span>
+                    Learn
+                  </span>
+                  <span class="flex items-center gap-1.5">
+                    <span class="size-4.5 shrink-0 rounded-full border-2 border-blue-200"></span>
+                    Practice
+                  </span>
+                  <span class="flex items-center gap-1.5">
+                    <span class="size-4.5 shrink-0 rounded-full border-2 border-blue-200"></span>
+                    Assess
+                  </span>
+                </div>
+              </div>
+
+              <!-- Testimonial card -->
+              <div
+                class="z-20 mt-4 w-full rounded-3xl border border-[#E3EDF5] bg-white p-4.5 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.26)] sm:mx-auto sm:max-w-[420px] lg:absolute lg:-bottom-6 lg:right-0 lg:mt-0 lg:w-[270px] lg:max-w-none lg:-rotate-3 xl:right-2"
+              >
+                <div class="flex items-center gap-2.5">
+                  <img
+                    src="./assets/images/avatar-sarah.jpg"
+                    alt="Sarah L., English teacher"
+                    class="size-10 rounded-full object-cover"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                  />
+                  <div class="flex gap-0.5 text-amber-400" aria-label="Rated 5 out of 5 stars">
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" /></svg>
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" /></svg>
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" /></svg>
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" /></svg>
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" /></svg>
+                  </div>
+                </div>
+                <blockquote class="mt-2.5 text-[13px] leading-relaxed text-slate-600">
+                  &ldquo;Remtoo saves me hours of prep time. My students are more engaged than ever!&rdquo;
+                </blockquote>
+                <p class="mt-2 text-xs">
+                  <span class="font-bold text-[#0F1B4C]">Sarah L.</span>
+                  <span class="text-slate-400"> &middot; English Teacher</span>
+                </p>
+              </div>
+
+              <!-- Sparkle below testimonial -->
+              <svg
+                class="absolute -bottom-9 right-16 z-0 hidden size-6 text-emerald-400 lg:block"
+                viewBox="0 0 32 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M16 4v6" /><path d="M16 22v6" />
+                <path d="M4 16h6" /><path d="M22 16h6" />
+              </svg>
+            </div>
+
+            <!-- Right: copy -->
+            <div class="max-w-[600px] lg:pt-6">
+              <p class="flex items-center gap-2.5 text-xs font-bold tracking-[0.16em] text-[#0F1B4C] uppercase">
+                <span class="grid size-5 place-items-center rounded-full bg-blue-600 text-white">
+                  <svg class="size-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                </span>
+                Complete English Curriculum
+              </p>
+
+              <h1
+                class="mt-4 text-[clamp(2.3rem,4.4vw,3.4rem)] leading-[1.08] font-extrabold tracking-tight text-[#0F1B4C]"
+              >
+                Teach English with Confidence.<br />
+                <span class="text-[#2B6CF6]">Ready to Teach.</span>
+              </h1>
+
+              <p class="mt-5 max-w-[32rem] text-[1.05rem] leading-relaxed text-slate-500">
+                A complete, ready-to-teach curriculum with lessons, videos, activities and
+                assessments from A1 to C1 &mdash; all in one place.
+              </p>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+                <a
+                  class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem] max-[480px]:w-full"
+                  href="free-sample.html"
+                >
+                  Explore Free Lessons
+                  <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="13 6 19 12 13 18" />
+                  </svg>
+                </a>
+                <a
+                  class="btn rounded-full border-[1.5px] border-[#B7D2F8] bg-white px-7 py-3.5 text-[0.95rem] text-blue-700 shadow-sm hover:-translate-y-px hover:border-blue-500 hover:bg-blue-50 max-[480px]:w-full"
+                  href="for-schools.html"
+                  >Book a Demo</a
+                >
+              </div>
+
+              <ul class="mt-9 flex list-none flex-wrap gap-x-7 gap-y-3">
+                <li class="flex items-center gap-2.5 text-sm font-medium text-slate-500">
+                  <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-green-50 text-green-600">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </span>
+                  No credit card required
+                </li>
+                <li class="flex items-center gap-2.5 text-sm font-medium text-slate-500">
+                  <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </span>
+                  Trusted by teachers and schools
+                </li>
+                <li class="flex items-center gap-2.5 text-sm font-medium text-slate-500">
+                  <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-green-50 text-green-600">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </span>
+                  A1&ndash;C1 CEFR-aligned
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Features ================= -->
+        <section class="border-t border-[#E3EDF5] bg-linear-to-b from-white to-[#F4F9FD] py-14 lg:py-16">
+          <div class="mx-auto w-full max-w-[1600px] px-6 sm:px-8 lg:px-12">
+            <h2 class="max-w-2xl text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-[#0F1B4C]">
+              Everything you need to teach, in one place.
+            </h2>
+            <p class="mt-3 max-w-xl text-base text-slate-500">
+              Engaging content, real-world English and easy-to-use lessons for every level.
+            </p>
+
+            <div class="mt-10 grid gap-x-8 gap-y-9 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex gap-4">
+                <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="text-[0.95rem] font-bold text-[#0F1B4C]">Ready-to-teach lessons</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                    Complete, structured units from A1 to C1.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#EFE9FD] text-violet-600">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <polygon points="10 8.5 15.5 12 10 15.5" fill="currentColor" stroke="none" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="text-[0.95rem] font-bold text-[#0F1B4C]">Authentic videos and audio</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                    Real-world English for real progress.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#FDE8E6] text-red-500">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="text-[0.95rem] font-bold text-[#0F1B4C]">Interactive activities</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                    Keep students speaking, thinking and learning.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E1EDFB] text-blue-600">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18" />
+                    <path d="M8 17V9" />
+                    <path d="M13 17V5" />
+                    <path d="M18 17v-3" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="text-[0.95rem] font-bold text-[#0F1B4C]">Built-in assessments</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                    Track progress with ease.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ================= Level journey ================= -->
+    <section class="py-14 lg:py-16">
+      <div class="wrap">
+        <div class="flex items-center justify-center gap-1.5 sm:gap-3">
+          <!-- A1 -->
+          <a href="curriculum.html#a1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-white/80 px-2 py-4 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
+            <svg class="size-7 text-emerald-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 20h10" />
+              <path d="M10 20c5.5-2.5.8-6.4 3-10" />
+              <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+              <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.2-3 0-4.3.6-4.9 1.6z" />
+            </svg>
+            <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A1</span>
+            <span class="text-center text-[10px] text-slate-500 sm:text-xs">Beginner</span>
+          </a>
+
+          <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+
+          <!-- A2 -->
+          <a href="curriculum.html#a2" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-white/80 px-2 py-4 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
+            <svg class="size-7 text-blue-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18" />
+              <path d="M8 17V9" />
+              <path d="M13 17V5" />
+              <path d="M18 17v-3" />
+            </svg>
+            <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A2</span>
+            <span class="text-center text-[10px] text-slate-500 sm:text-xs">Elementary</span>
+          </a>
+
+          <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+
+          <!-- B1 -->
+          <a href="curriculum.html#b1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-white/80 px-2 py-4 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
+            <svg class="size-7 text-amber-700 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" />
+              <path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
+            </svg>
+            <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B1</span>
+            <span class="text-center text-[10px] text-slate-500 sm:text-xs">Intermediate</span>
+          </a>
+
+          <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+
+          <!-- B2 -->
+          <a href="curriculum.html#b2" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-white/80 px-2 py-4 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
+            <svg class="size-7 text-red-500 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B2</span>
+            <span class="text-center text-[10px] text-slate-500 sm:text-xs">
+              <span class="sm:hidden">Upper Int.</span>
+              <span class="hidden sm:inline">Upper Intermediate</span>
+            </span>
+          </a>
+
+          <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+
+          <!-- C1 -->
+          <a href="curriculum.html#c1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-white/80 px-2 py-4 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
+            <svg class="size-7 text-violet-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 20 6-11 4 7 3-4 5 8z" />
+              <path d="M9 5v4" />
+              <path d="M7 7h4" />
+            </svg>
+            <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">C1</span>
+            <span class="text-center text-[10px] text-slate-500 sm:text-xs">Advanced</span>
+          </a>
         </div>
 
-        <!-- Wavy bottom -->
-        <svg
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-16 w-full text-[#EAF2FA] sm:h-24"
-          viewBox="0 0 1440 96"
-          preserveAspectRatio="none"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M0 64 C 240 96 480 16 720 40 C 960 64 1200 16 1440 48 L1440 96 L0 96 Z" />
-        </svg>
-        <svg
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-12 w-full text-[#E6F5EE] opacity-70 sm:h-16"
-          viewBox="0 0 1440 64"
-          preserveAspectRatio="none"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M0 44 C 260 20 520 64 780 46 C 1030 28 1230 56 1440 38 L1440 64 L0 64 Z" />
-        </svg>
-      </section>
-
-      <!-- ================= Level journey ================= -->
-      <section class="bg-linear-to-b from-white to-emerald-50/70 py-14 lg:py-16">
-        <div class="wrap">
-          <div class="flex items-center justify-center gap-1.5 sm:gap-3">
-            <!-- A1 -->
-            <a href="curriculum.html#a1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#DCF3E8] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
-              <svg class="size-7 text-emerald-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 20h10" />
-                <path d="M10 20c5.5-2.5.8-6.4 3-10" />
-                <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
-                <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.2-3 0-4.3.6-4.9 1.6z" />
-              </svg>
-              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A1</span>
-              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Beginner</span>
-            </a>
-
-            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-
-            <!-- A2 -->
-            <a href="curriculum.html#a2" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#DBEAFE] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
-              <svg class="size-7 text-blue-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 3v18h18" />
-                <path d="M8 17V9" />
-                <path d="M13 17V5" />
-                <path d="M18 17v-3" />
-              </svg>
-              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">A2</span>
-              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Elementary</span>
-            </a>
-
-            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-
-            <!-- B1 -->
-            <a href="curriculum.html#b1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#FDF3C7] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
-              <svg class="size-7 text-amber-700 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" />
-                <path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
-              </svg>
-              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B1</span>
-              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Intermediate</span>
-            </a>
-
-            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-
-            <!-- B2 -->
-            <a href="curriculum.html#b2" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#FDE2E0] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
-              <svg class="size-7 text-red-500 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">B2</span>
-              <span class="text-center text-[10px] text-slate-500 sm:text-xs">
-                <span class="sm:hidden">Upper Int.</span>
-                <span class="hidden sm:inline">Upper Intermediate</span>
-              </span>
-            </a>
-
-            <svg class="size-4 shrink-0 text-slate-300 sm:size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-
-            <!-- C1 -->
-            <a href="curriculum.html#c1" class="flex flex-1 flex-col items-center gap-1 rounded-2xl bg-[#EDE7FD] px-2 py-4 transition-transform duration-150 hover:-translate-y-0.5 sm:px-5 sm:py-5">
-              <svg class="size-7 text-violet-600 sm:size-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m3 20 6-11 4 7 3-4 5 8z" />
-                <path d="M9 5v4" />
-                <path d="M7 7h4" />
-              </svg>
-              <span class="text-lg font-extrabold text-slate-900 sm:text-2xl">C1</span>
-              <span class="text-center text-[10px] text-slate-500 sm:text-xs">Advanced</span>
-            </a>
-          </div>
-
-          <p class="mt-8 text-center text-base text-slate-600 sm:text-lg">
-            A structured learning journey from beginner to advanced.
-          </p>
-        </div>
-      </section>
-    </main>
+        <p class="mt-8 text-center text-base text-slate-600 sm:text-lg">
+          A structured learning journey from beginner to advanced.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
