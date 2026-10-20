@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing — Remtoo</title>
+    <meta
+      name="description"
+      content="Simple, honest Remtoo pricing: Teacher Plus for individual teachers, the School Plan for whole departments, and custom solutions for institutions. Compare plans and find the right fit."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='bold' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/site.css?v=pr2026c" />
+    <script type="module" src="./src/js/main.js" defer></script>
+  </head>
+  <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
+    <!-- ================= Header ================= -->
+    <header class="relative border-b border-slate-100 bg-white py-4 lg:py-5">
+      <div class="wrap wrap-wide flex items-center gap-4 lg:gap-5 xl:gap-8">
+        <a
+          class="flex shrink-0 items-center gap-2.5"
+          href="index.html"
+          aria-label="Remtoo home"
+        >
+          <span
+            class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+            aria-hidden="true"
+            >R</span
+          >
+          <span class="text-[1.2rem] font-extrabold tracking-tight text-slate-900 xl:text-[1.35rem]"
+            >Remtoo</span
+          >
+        </a>
+
+        <nav
+          id="site-nav"
+          aria-label="Main navigation"
+          class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="curriculum.html"
+            >Curriculum</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="whats-included.html"
+            >What&rsquo;s Included</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-schools.html"
+            >For Schools</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-teachers.html"
+            >For Teachers</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-blue-700 transition-colors hover:bg-slate-50 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="pricing.html"
+            aria-current="page"
+            >Pricing</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="free-sample.html"
+            >Free Sample</a
+          >
+        </nav>
+
+        <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0">
+          <a
+            class="btn btn-primary hidden px-5 py-2.5 text-sm sm:inline-flex"
+            href="#book-demo"
+            >Book a Demo</a
+          >
+          <button
+            id="nav-toggle"
+            class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-slate-900 lg:hidden"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <svg
+              class="icon-open size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <svg
+              class="icon-close size-5 hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= Page hero ================= -->
+      <section class="relative overflow-hidden bg-[#FAF8F2] py-14 lg:py-20">
+        <div
+          class="pointer-events-none absolute -top-32 -left-32 size-[420px] rounded-full bg-[#EAF2FA] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-28 -bottom-36 size-[460px] rounded-full bg-[#E6F5EE] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <div class="wrap wrap-wide relative z-10 grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          <!-- Left: copy -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-700 uppercase">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Flexible Education Solution
+            </p>
+
+            <h1 class="mt-5 max-w-2xl text-[clamp(2rem,4.2vw,3.1rem)] leading-[1.1] font-extrabold tracking-tight text-slate-900">
+              The Right <span class="text-blue-600">English Learning Solution</span> for Every Classroom
+            </h1>
+
+            <p class="mt-4 max-w-xl text-lg leading-relaxed text-slate-500">
+              Discover structured plans designed for school, support teachers, and
+              power holistic, real-world English learning at scale.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+              <a
+                class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem] max-[480px]:w-full"
+                href="#plans"
+              >
+                Explore Plans
+                <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="13 6 19 12 13 18" />
+                </svg>
+              </a>
+              <a
+                class="btn rounded-full border-[1.5px] border-[#B7D2F8] bg-white px-7 py-3.5 text-[0.95rem] text-blue-700 shadow-sm hover:-translate-y-px hover:border-blue-500 hover:bg-blue-50 max-[480px]:w-full"
+                href="#book-demo"
+                >Talk to Our Team</a
+              >
+            </div>
+
+            <ul class="mt-7 flex flex-wrap gap-2.5 max-[480px]:justify-start">
+              <li class="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-3.5 py-1.5 text-[13px] font-semibold text-slate-600 shadow-sm">
+                <svg class="size-3.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                Clear &amp; Transparent Pricing
+              </li>
+              <li class="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-3.5 py-1.5 text-[13px] font-semibold text-slate-600 shadow-sm">
+                <svg class="size-3.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                100+ Schools &amp; Institutions
+              </li>
+              <li class="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-3.5 py-1.5 text-[13px] font-semibold text-slate-600 shadow-sm">
+                <svg class="size-3.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                Custom Solution Available
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: classroom photo card -->
+          <div class="relative mx-auto w-full max-w-[480px]">
+            <div class="relative overflow-hidden rounded-[28px] border-4 border-white/80 shadow-[0_40px_90px_-24px_rgba(9,18,48,0.55)]">
+              <img
+                src="./assets/images/card-speaking.jpg"
+                alt="Students practicing English in a live speaking session"
+                class="aspect-square w-full object-cover"
+                width="768"
+                height="768"
+              />
+
+              <!-- Live session badge -->
+              <div class="absolute top-4 right-4 z-20 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg shadow-[#0F1B4C]/25">
+                <span class="relative flex size-2 shrink-0">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex size-2 rounded-full bg-green-500"></span>
+                </span>
+                <span class="text-[11px] font-bold tracking-wide text-slate-900 uppercase">Live Speaking Session</span>
+              </div>
+
+              <!-- Fluency card -->
+              <div class="absolute bottom-4 left-4 z-20 w-[calc(100%-32px)] max-w-[280px] rounded-2xl bg-white p-4 shadow-lg shadow-[#0F1B4C]/25">
+                <p class="text-sm font-bold text-slate-900">Interactive Dialogue</p>
+                <div class="mt-2 flex items-center justify-between text-xs font-medium text-slate-500">
+                  <span>Fluency</span>
+                  <span class="font-bold text-blue-700">94%</span>
+                </div>
+                <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-slate-100" aria-hidden="true">
+                  <div class="h-full w-[94%] rounded-full bg-blue-600"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Pricing cards ================= -->
+      <section id="plans" class="scroll-mt-24 py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Simple, Honest Pricing
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            Choose the Plan Tailored to Your Growth
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            Start with a single teacher account or equip your whole department
+            &mdash; every plan includes the complete CEFR-aligned curriculum.
+          </p>
+
+          <div class="mt-14 grid items-stretch gap-6 lg:grid-cols-3 lg:gap-7">
+            <!-- Card 1: Teacher Plus -->
+            <div class="flex flex-col rounded-3xl border border-slate-200/80 p-7 shadow-sm sm:p-8">
+              <h3 class="text-lg font-bold text-slate-900">Teacher Plus</h3>
+              <p class="mt-1 text-sm text-slate-500">For individual teachers</p>
+
+              <p class="mt-6 flex items-baseline gap-1.5">
+                <span class="text-[2.6rem] leading-none font-extrabold tracking-tight text-slate-900">$79</span>
+                <span class="text-sm font-semibold text-slate-400">/month</span>
+              </p>
+
+              <ul class="mt-7 space-y-3">
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  1 teacher account, up to 5 classrooms
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Core curriculum library (A1&ndash;B1)
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Lesson plans &amp; answer keys
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Quizzes &amp; unit assessments
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Standard email support
+                </li>
+              </ul>
+
+              <a
+                class="btn mt-8 w-full rounded-full border-[1.5px] border-blue-100 bg-blue-50 px-6 py-3 text-[0.95rem] text-blue-700 hover:-translate-y-px hover:border-blue-300 hover:bg-blue-100"
+                href="#book-demo"
+                >Choose Teacher Plus</a
+              >
+            </div>
+
+            <!-- Card 2: School Plan (highlighted) -->
+            <div class="relative flex flex-col rounded-3xl bg-[#0F1B4C] p-7 pt-9 text-white shadow-[0_40px_90px_-24px_rgba(9,18,48,0.55)] sm:p-8 sm:pt-10 lg:-translate-y-3">
+              <p class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-4 py-1.5 text-xs font-bold whitespace-nowrap text-white shadow-lg shadow-blue-600/40">
+                Most Popular for Schools
+              </p>
+
+              <h3 class="text-lg font-bold">School Plan</h3>
+              <p class="mt-1 text-sm text-slate-300">For schools &amp; departments</p>
+
+              <p class="mt-6 flex items-baseline gap-1.5">
+                <span class="text-[2.6rem] leading-none font-extrabold tracking-tight">$299</span>
+                <span class="text-sm font-semibold text-slate-400">/month</span>
+              </p>
+
+              <ul class="mt-7 space-y-3">
+                <li class="flex items-start gap-2.5 text-sm text-slate-200">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Unlimited teachers &amp; classrooms
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-200">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Full curriculum library (A1&ndash;C1)
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-200">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Progress tracking &amp; reports
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-200">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Onboarding &amp; teacher training
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-200">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Priority support &amp; school branding
+                </li>
+              </ul>
+
+              <a
+                class="btn btn-primary mt-8 w-full rounded-full px-6 py-3 text-[0.95rem]"
+                href="#book-demo"
+                >Choose School Plan</a
+              >
+            </div>
+
+            <!-- Card 3: Custom Plan -->
+            <div class="flex flex-col rounded-3xl border border-slate-200/80 p-7 shadow-sm sm:p-8">
+              <h3 class="text-lg font-bold text-slate-900">Custom Plan</h3>
+              <p class="mt-1 text-sm text-slate-500">For institutions with special needs</p>
+
+              <p class="mt-6 flex items-baseline gap-2">
+                <span class="text-[2rem] leading-none font-extrabold tracking-tight text-slate-900">Custom Pricing</span>
+              </p>
+              <p class="mt-1.5 text-sm text-slate-400">Tailored to your requirements</p>
+
+              <ul class="mt-7 space-y-3">
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Everything in the School Plan
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Tailored curriculum options
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Dedicated success manager
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Custom integrations &amp; SSO
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                  <svg class="mt-0.5 size-4.5 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Flexible contract terms
+                </li>
+              </ul>
+
+              <a
+                class="btn mt-8 w-full rounded-full border-[1.5px] border-[#B7D2F8] bg-white px-6 py-3 text-[0.95rem] text-blue-700 shadow-sm hover:-translate-y-px hover:border-blue-500 hover:bg-blue-50"
+                href="#book-demo"
+                >Request a Custom Quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Plan comparison table ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide grid items-center gap-10 xl:grid-cols-[0.8fr_1.2fr] xl:gap-12">
+          <!-- Left: copy + classroom photo -->
+          <div>
+            <p class="text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+              Feature Comparison
+            </p>
+            <h2 class="mt-4 text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+              Find the Plan That Fits Your Needs
+            </h2>
+            <p class="mt-3 max-w-md text-base leading-relaxed text-slate-500">
+              Compare the plans side by side and see exactly what your teachers
+              and classrooms get at every level.
+            </p>
+
+            <div class="relative mt-8 overflow-hidden rounded-[28px] border-4 border-white/80 shadow-[0_24px_60px_-18px_rgba(9,18,48,0.4)]">
+              <img
+                src="./assets/images/compare-classroom.jpg"
+                alt="Teacher helping a young student with a workbook in class"
+                class="aspect-[4/3] w-full object-cover"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+
+              <div class="absolute bottom-4 left-4 z-20 flex items-center gap-3 rounded-2xl bg-white p-3 pr-5 shadow-lg shadow-[#0F1B4C]/25">
+                <span class="grid size-10 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                  <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                </span>
+                <div>
+                  <p class="text-sm font-bold text-slate-900">One curriculum, every plan</p>
+                  <p class="text-xs text-slate-500">Lessons, videos &amp; assessments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: comparison table -->
+          <div class="overflow-x-auto rounded-2xl border border-slate-200/80 bg-white shadow-sm">
+            <table class="w-full min-w-[620px] border-collapse text-left text-sm">
+              <thead>
+                <tr class="border-b border-slate-200/90">
+                  <th scope="col" class="px-4 py-4 text-[13px] font-bold tracking-[0.1em] text-slate-400 uppercase sm:px-5">
+                    Features
+                  </th>
+                  <th scope="col" class="px-4 py-4 font-bold text-slate-900 sm:px-5">
+                    Teacher Plan
+                  </th>
+                  <th scope="col" class="bg-blue-50/70 px-4 py-4 font-bold text-blue-700 sm:px-5">
+                    <span class="inline-flex items-center gap-2">
+                      School Plan
+                      <span class="rounded-full bg-blue-600 px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-white uppercase">Popular</span>
+                    </span>
+                  </th>
+                  <th scope="col" class="px-4 py-4 font-bold text-slate-900 sm:px-5">
+                    Custom Plan
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-200/70">
+                  <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Included Curriculum</th>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Core (A1&ndash;B1)</td>
+                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Full (A1&ndash;C1)</td>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Full + extensions</td>
+                </tr>
+                <tr class="border-b border-slate-200/70">
+                  <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Teacher Resources</th>
+                  <td class="px-4 py-4 sm:px-5">
+                    <span class="inline-flex items-center gap-2 text-slate-600">
+                      <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                      Lesson packs
+                    </span>
+                  </td>
+                  <td class="bg-blue-50/70 px-4 py-4 sm:px-5">
+                    <span class="inline-flex items-center gap-2 font-medium text-slate-800">
+                      <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                      Full kit + training
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 sm:px-5">
+                    <span class="inline-flex items-center gap-2 text-slate-600">
+                      <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                      Everything, tailored
+                    </span>
+                  </td>
+                </tr>
+                <tr class="border-b border-slate-200/70">
+                  <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Assessment</th>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Quizzes &amp; tests</td>
+                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Tracking + reports</td>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Custom assessments</td>
+                </tr>
+                <tr class="border-b border-slate-200/70">
+                  <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Support</th>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Email support</td>
+                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Priority support</td>
+                  <td class="px-4 py-4 text-slate-600 sm:px-5">Dedicated manager</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Custom Setup</th>
+                  <td class="px-4 py-4 text-slate-300 sm:px-5">&mdash;</td>
+                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Guided onboarding</td>
+                  <td class="px-4 py-4 sm:px-5">
+                    <span class="inline-flex items-center gap-2 text-slate-600">
+                      <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                      Full custom setup
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Value proposition ================= -->
+      <section class="py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <div class="grid gap-5 md:grid-cols-3">
+            <div class="rounded-2xl border border-blue-100 bg-blue-50 p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-200/50 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-blue-100 text-blue-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Designed for Educators</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Resources built to reduce lesson preparation time, so teachers can
+                focus on teaching &mdash; not paperwork.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-200/50 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-emerald-100 text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                  <path d="M22 10v6" />
+                  <path d="M6 12.5V17a6 3 0 0 0 12 0v-4.5" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Built for Schools</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Scalable options for institution-wide adoption, with onboarding,
+                training and reporting for your whole department.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-amber-100 bg-amber-50 p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-amber-200/60 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-amber-100 text-amber-700">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="4" y1="21" x2="4" y2="14" />
+                  <line x1="4" y1="10" x2="4" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12" y2="3" />
+                  <line x1="20" y1="21" x2="20" y2="16" />
+                  <line x1="20" y1="12" x2="20" y2="3" />
+                  <line x1="1" y1="14" x2="7" y2="14" />
+                  <line x1="9" y1="8" x2="15" y2="8" />
+                  <line x1="17" y1="16" x2="23" y2="16" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Flexible for Different Needs</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Customizable packages tailored to your specific requirements
+                &mdash; from curriculum scope to integrations and reporting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="border-t border-slate-100 bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Frequently Asked Questions
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            Questions About Our Plans?
+          </h2>
+
+          <div class="mx-auto mt-10 max-w-3xl space-y-3.5">
+            <details class="group rounded-2xl border border-slate-200/80" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                <span class="text-[0.95rem] font-bold text-slate-900">Which plan is right for me?</span>
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-500 transition-colors group-open:border-blue-200 group-open:text-blue-600">
+                  <svg class="size-4 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </summary>
+              <p class="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                If you&rsquo;re an individual teacher, Teacher Plus gives you everything
+                you need for your own classrooms. Schools and departments get the
+                best value from the School Plan, while larger institutions with
+                specific requirements can request a Custom Plan.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200/80">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                <span class="text-[0.95rem] font-bold text-slate-900">What is included in the Teacher Plan?</span>
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-500 transition-colors group-open:border-blue-200 group-open:text-blue-600">
+                  <svg class="size-4 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </summary>
+              <p class="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                One teacher account with up to five classrooms, the core A1&ndash;B1
+                curriculum library, ready-to-use lesson plans and answer keys,
+                quizzes and unit assessments, and standard email support.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200/80">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                <span class="text-[0.95rem] font-bold text-slate-900">Which plan should a school choose?</span>
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-500 transition-colors group-open:border-blue-200 group-open:text-blue-600">
+                  <svg class="size-4 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </summary>
+              <p class="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                The School Plan is built for institutions: unlimited teachers and
+                classrooms, the full A1&ndash;C1 curriculum, progress tracking and
+                reports, onboarding with teacher training, priority support and
+                custom school branding.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200/80">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                <span class="text-[0.95rem] font-bold text-slate-900">Can an institution request a customized solution?</span>
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-500 transition-colors group-open:border-blue-200 group-open:text-blue-600">
+                  <svg class="size-4 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </summary>
+              <p class="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                Yes. The Custom Plan includes everything in the School Plan plus
+                tailored curriculum options, custom integrations and SSO, a
+                dedicated success manager and flexible contract terms. Request a
+                custom quote and we&rsquo;ll design a package around your needs.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200/80">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                <span class="text-[0.95rem] font-bold text-slate-900">How can I learn more before choosing a plan?</span>
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-500 transition-colors group-open:border-blue-200 group-open:text-blue-600">
+                  <svg class="size-4 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </summary>
+              <p class="px-6 pb-5 text-sm leading-relaxed text-slate-500">
+                Book a demo and our team will walk you through the plans for your
+                context, or explore the free sample lessons to see the curriculum
+                in action first. You can also contact our team with any questions
+                &mdash; no commitment required.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+      <!-- CTA band -->
+      <section id="book-demo" class="bg-[#0F1B4C] py-16 lg:py-20">
+        <div class="mx-auto w-full px-6 text-center sm:px-12 lg:px-20">
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-200 uppercase">
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            For teachers &amp; schools
+          </p>
+
+          <h2 class="mx-auto mt-5 max-w-4xl text-[clamp(1.9rem,3.4vw,2.7rem)] leading-[1.12] font-extrabold tracking-tight text-white">
+            Ready to make a bigger impact with English education?
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-3xl text-[1.05rem] leading-relaxed text-slate-300/90">
+            Join over 1,000 teachers and 100 schools saving hours every week with a
+            curriculum that&rsquo;s ready from day one.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+            <a
+              class="btn rounded-full bg-white px-7 py-3.5 text-[0.95rem] text-[#0F1B4C] shadow-lg shadow-black/20 hover:-translate-y-px hover:bg-blue-50 max-[480px]:w-full"
+              href="mailto:hello@remtoo.com?subject=Demo%20request"
+            >
+              Book a Demo
+              <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" />
+              </svg>
+            </a>
+            <a
+              class="btn rounded-full border-[1.5px] border-white/30 px-7 py-3.5 text-[0.95rem] text-white hover:-translate-y-px hover:border-white/60 hover:bg-white/5 max-[480px]:w-full"
+              href="free-sample.html"
+              >Explore Free Lessons</a
+            >
+          </div>
+
+          <p class="mt-6 text-[13px] font-medium text-slate-400">
+            No credit card required &nbsp;&middot;&nbsp; Free sample lessons &nbsp;&middot;&nbsp; Setup in minutes
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer bottom -->
+      <div class="bg-[#0B1433] py-12 lg:py-14">
+        <div class="mx-auto w-full px-6 sm:px-12 lg:px-20">
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+            <div>
+              <a class="flex items-center gap-2.5" href="index.html" aria-label="Remtoo home">
+                <span
+                  class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+                  aria-hidden="true"
+                  >R</span
+                >
+                <span class="text-[1.2rem] font-extrabold tracking-tight text-white">Remtoo</span>
+              </a>
+              <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
+                A complete, ready-to-teach English curriculum from A1 to C1 &mdash; lessons,
+                videos, activities and assessments in one place.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Product</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="curriculum.html">Curriculum</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="whats-included.html">What&rsquo;s Included</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="free-sample.html">Free Sample</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">For Educators</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-teachers.html">For Teachers</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html">For Schools</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Book a Demo</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Get in Touch</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li>
+                  <a class="inline-flex items-center gap-2 text-slate-400 transition-colors hover:text-white" href="mailto:hello@remtoo.com">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    hello@remtoo.com
+                  </a>
+                </li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Request a walkthrough</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
+            <p class="text-[13px] text-slate-500">&copy; 2026 Remtoo. All rights reserved.</p>
+            <p class="text-[13px] font-semibold text-slate-400">Teach English. Create brighter futures.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
