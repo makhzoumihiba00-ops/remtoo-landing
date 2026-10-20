@@ -30,3 +30,24 @@ if (navToggle && siteNav) {
     if (window.innerWidth >= 1024) setNav(false);
   });
 }
+
+// Demo request form (For Schools page)
+const demoForm = document.getElementById('demo-form');
+const demoSuccess = document.getElementById('demo-success');
+
+if (demoForm && demoSuccess) {
+  demoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!demoForm.reportValidity()) return;
+
+    const name = new FormData(demoForm).get('name')?.trim() || '';
+    const firstName = name.split(/\s+/)[0];
+    const heading = demoSuccess.querySelector('[data-demo-name]');
+    if (heading) heading.textContent = firstName ? `Thanks, ${firstName}!` : 'Thanks!';
+
+    demoForm.classList.add('hidden');
+    demoSuccess.classList.remove('hidden');
+    demoSuccess.focus();
+  });
+}
