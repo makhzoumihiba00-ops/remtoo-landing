@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Teachers — Remtoo</title>
+    <meta
+      name="description"
+      content="Remtoo for teachers: 570+ ready-to-teach English lessons for A1–C1, complete with slides, videos, activities and answer keys — prepare for class in minutes, not hours."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='bold' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/site.css?v=ft2026i" />
+    <script type="module" src="./src/js/main.js" defer></script>
+    <script type="module" src="./src/js/for-teachers.js" defer></script>
+  </head>
+  <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
+    <!-- ================= Header ================= -->
+    <header class="relative border-b border-slate-100 bg-white py-4 lg:py-5">
+      <div class="wrap wrap-wide flex items-center gap-4 lg:gap-5 xl:gap-8">
+        <a
+          class="flex shrink-0 items-center gap-2.5"
+          href="index.html"
+          aria-label="Remtoo home"
+        >
+          <span
+            class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+            aria-hidden="true"
+            >R</span
+          >
+          <span class="text-[1.2rem] font-extrabold tracking-tight text-slate-900 xl:text-[1.35rem]"
+            >Remtoo</span
+          >
+        </a>
+
+        <nav
+          id="site-nav"
+          aria-label="Main navigation"
+          class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="curriculum.html"
+            >Curriculum</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="whats-included.html"
+            >What&rsquo;s Included</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-schools.html"
+            >For Schools</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-blue-700 transition-colors hover:bg-slate-50 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-teachers.html"
+            aria-current="page"
+            >For Teachers</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="pricing.html"
+            >Pricing</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="free-sample.html"
+            >Free Sample</a
+          >
+        </nav>
+
+        <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0">
+          <a
+            class="btn btn-primary hidden px-5 py-2.5 text-sm sm:inline-flex"
+            href="#book-demo"
+            >Book a Demo</a
+          >
+          <button
+            id="nav-toggle"
+            class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-slate-900 lg:hidden"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <svg
+              class="icon-open size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <svg
+              class="icon-close size-5 hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= Page hero ================= -->
+      <section class="relative overflow-hidden bg-[#FAF8F2] py-14 lg:py-20">
+        <div
+          class="pointer-events-none absolute -top-32 -left-32 size-[420px] rounded-full bg-[#EAF2FA] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-28 -bottom-36 size-[460px] rounded-full bg-[#E6F5EE] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <div class="wrap wrap-wide relative z-10 grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          <!-- Left: copy -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-700 uppercase">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              For Teachers
+            </p>
+
+            <h1 class="mt-5 max-w-2xl text-[clamp(2rem,4.2vw,3.1rem)] leading-[1.1] font-extrabold tracking-tight text-slate-900">
+              Teach Better. <span class="text-blue-600">Prepare Less.</span>
+            </h1>
+
+            <p class="mt-4 max-w-xl text-lg leading-relaxed text-slate-500">
+              Every Remtoo lesson arrives complete &mdash; slides, video, activities
+              and answer keys &mdash; so you walk into class ready in minutes,
+              not hours.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+              <a
+                class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem] max-[480px]:w-full"
+                href="free-sample.html"
+              >
+                Explore Free Lessons
+                <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="13 6 19 12 13 18" />
+                </svg>
+              </a>
+              <a
+                class="btn rounded-full border-[1.5px] border-[#B7D2F8] bg-white px-7 py-3.5 text-[0.95rem] text-blue-700 shadow-sm hover:-translate-y-px hover:border-blue-500 hover:bg-blue-50 max-[480px]:w-full"
+                href="whats-included.html"
+                >See What&rsquo;s Included</a
+              >
+            </div>
+
+            <p class="mt-6 text-sm font-medium text-slate-500">
+              Loved by 1,000+ teachers at 100+ schools
+            </p>
+          </div>
+
+          <!-- Right: teacher hero image -->
+          <div class="relative mx-auto w-full max-w-[460px]">
+            <img
+              src="./assets/images/teachers-hero.png"
+              alt="Teacher holding a tablet, surrounded by lesson-ready cards"
+              class="aspect-[4/5] w-full rounded-[28px] border-4 border-white/80 object-cover shadow-[0_40px_90px_-24px_rgba(9,18,48,0.55)]"
+              width="460"
+              height="585"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= How it works ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            How It Works
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            From plan to progress in three steps
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            A simple weekly rhythm that works in any classroom &mdash; online or
+            in person.
+          </p>
+
+          <div class="relative mt-12">
+            <div class="absolute top-7 right-[16.66%] left-[16.66%] hidden border-t-2 border-dashed border-slate-300 lg:block" aria-hidden="true"></div>
+
+            <div class="grid gap-10 lg:grid-cols-3">
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">1</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Choose your lesson</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  Browse the A1&ndash;C1 curriculum by level, topic or skill and
+                  pick what your class needs next.
+                </p>
+              </div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">2</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Open and teach</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  Project the slides, play the video and follow the teaching
+                  notes. No prep, no printing pile.
+                </p>
+              </div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">3</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Assign and review</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  Send activities and assessments to your class, then watch
+                  progress update automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 flex justify-center">
+            <a class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem]" href="free-sample.html">
+              Try a Free Lesson
+              <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Why teachers choose Remtoo ================= -->
+      <section class="border-t border-slate-100 py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Why Remtoo
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            More teaching, less admin
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            Remtoo handles the planning so you can focus on the part only you
+            can do &mdash; teaching.
+          </p>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-2xl border border-[#C7DDF3] bg-[#EAF3FB] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E1EDFB] text-blue-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <polyline points="12 7 12 12 15.5 14" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Save hours every week</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Stop rebuilding materials from scratch. Every unit arrives
+                complete and ready to teach.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Ready in minutes, not hours
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Weekly plans included
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-[#C7E9D8] bg-[#ECF8F1] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Teach with confidence</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Step-by-step teaching notes mean even new or non-specialist
+                teachers deliver strong lessons.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Guided lesson notes
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Native-speaker video models
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-[#F0E2B8] bg-[#FEF8E3] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#FDF3C7] text-amber-700">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 3h5v5" />
+                  <path d="M8 3H3v5" />
+                  <path d="M21 3l-7.5 7.5" />
+                  <path d="M3 3l7.5 7.5" />
+                  <path d="M12 10.5V21" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Flexible for any classroom</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Works in class, online or hybrid &mdash; and sits happily
+                alongside your course book.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Project it or share a link
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Fits your existing syllabus
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-[#C7DDF3] bg-[#EAF3FB] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E1EDFB] text-blue-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Keep students engaged</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Games, pair work and interactive tasks get every student
+                speaking from minute one.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Speaking in every lesson
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Games and pair activities
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-[#C7E9D8] bg-[#ECF8F1] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18" />
+                  <path d="m7 15 4-6 3 4 5-8" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">See progress clearly</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Auto-graded assessments show exactly how each class moves
+                through the CEFR levels.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Automatic grading
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Level completion certificates
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-[#F0E2B8] bg-[#FEF8E3] p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#FDF3C7] text-amber-700">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Keep growing as a teacher</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Short training videos and practical teaching tips are built
+                into every unit.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Teacher training library
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Methodology tips per unit
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Everything in one place ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-700 uppercase">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="14" rx="2" />
+                <path d="M8 21h8" />
+                <path d="M12 18v3" />
+              </svg>
+              One Platform
+            </p>
+            <h2 class="mt-5 text-[clamp(1.8rem,3.2vw,2.6rem)] leading-[1.12] font-extrabold tracking-tight text-slate-900">
+              Everything you need in one place
+            </h2>
+            <p class="mt-4 max-w-lg text-[1.05rem] leading-relaxed text-slate-500">
+              No more juggling textbooks, shared drives and downloads. One login
+              holds your whole program &mdash; and your evenings stay yours.
+            </p>
+            <a
+              class="group mt-7 inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition-colors hover:text-blue-800"
+              href="whats-included.html"
+            >
+              See what&rsquo;s included
+              <svg class="size-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </a>
+          </div>
+
+          <!-- Lesson window mockup -->
+          <div class="overflow-hidden rounded-2xl border border-pink-200/70 bg-pink-50 shadow-[0_30px_60px_-30px_rgba(9,18,48,0.25)]">
+            <div class="flex items-center gap-2 border-b border-pink-200/60 px-4 py-3">
+              <span class="size-2.5 rounded-full bg-slate-300" aria-hidden="true"></span>
+              <span class="size-2.5 rounded-full bg-slate-300" aria-hidden="true"></span>
+              <span class="size-2.5 rounded-full bg-slate-300" aria-hidden="true"></span>
+              <span class="ml-3 flex-1 truncate rounded-md bg-white px-3 py-1 text-[11px] font-medium text-slate-400">remtoo.com &mdash; A2 &middot; Unit 4 &middot; Lesson 2</span>
+            </div>
+
+            <div class="grid sm:grid-cols-[176px_1fr]">
+              <div class="hidden border-r border-pink-200/60 p-4 sm:block">
+                <p class="text-[10px] font-bold tracking-[0.14em] text-slate-400 uppercase">Level A2</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-400">Unit 3 &middot; Travel</li>
+                  <li class="rounded-md bg-blue-50 px-2.5 py-1.5 text-xs font-bold text-blue-700">Unit 4 &middot; Daily Routines</li>
+                  <li class="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-400">Unit 5 &middot; Food</li>
+                  <li class="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-400">Unit 6 &middot; Work</li>
+                </ul>
+              </div>
+
+              <div class="p-4 sm:p-5">
+                <div class="relative aspect-[16/8] overflow-hidden rounded-xl bg-slate-900">
+                  <img
+                    src="./assets/images/video-thumb.jpg"
+                    alt="Teacher at her desk working on a laptop"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    width="960"
+                    height="540"
+                    loading="lazy"
+                  />
+                  <span class="absolute inset-0 grid place-items-center" aria-hidden="true">
+                    <span class="grid size-12 place-items-center rounded-full bg-white/95 shadow-lg">
+                      <svg class="ml-0.5 size-5 text-blue-700" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
+                    </span>
+                  </span>
+                  <span class="absolute bottom-2.5 left-3 rounded-full bg-black/40 px-2.5 py-1 text-[10px] font-semibold text-white">Native-speaker video &middot; 4:32</span>
+                </div>
+                <p class="mt-4 text-sm font-bold text-slate-900">Lesson 2 &mdash; Present Simple in Routine</p>
+                <p class="mt-1 text-xs leading-relaxed text-slate-500">
+                  Warm-up, grammar presentation, speaking practice and an exit
+                  game &mdash; ready to project.
+                </p>
+                <div class="mt-3.5 flex flex-wrap gap-1.5">
+                  <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
+                    <svg class="size-3 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    Slides
+                  </span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
+                    <svg class="size-3 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    Video
+                  </span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
+                    <svg class="size-3 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    Activities
+                  </span>
+                  <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
+                    <svg class="size-3 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                    Answer key
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Classroom content ================= -->
+      <section class="border-t border-slate-100 py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Classroom Content
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            Curated for maximum engagement
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            Content designed for real classrooms &mdash; and tested with real
+            students.
+          </p>
+
+          <div class="mt-10 grid gap-8 md:grid-cols-2">
+            <article class="overflow-hidden rounded-2xl border border-slate-200/80">
+              <img
+                src="./assets/images/card-video.jpg"
+                alt="Student watching her English class video lesson on screen"
+                class="aspect-[16/10] w-full object-cover"
+                width="1000"
+                height="625"
+                loading="lazy"
+              />
+              <div class="p-5 sm:p-6">
+                <span class="grid size-12 place-items-center rounded-2xl bg-[#E1EDFB] text-blue-600">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="6 3 20 12 6 21 6 3" />
+                  </svg>
+                </span>
+                <h3 class="mt-4 text-[1.05rem] font-bold text-slate-900">Authentic video lessons</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                  Short native-speaker videos bring real English into your room
+                  and model pronunciation your students can actually copy.
+                </p>
+                <a
+                  class="group mt-4 inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition-colors hover:text-blue-800"
+                  href="free-sample.html"
+                >
+                  Watch a sample lesson
+                  <svg class="size-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-slate-200/80">
+              <img
+                src="./assets/images/card-speaking.jpg"
+                alt="Students practicing speaking together in a group activity"
+                class="aspect-[16/10] w-full object-cover"
+                width="1000"
+                height="625"
+                loading="lazy"
+              />
+              <div class="p-5 sm:p-6">
+                <span class="grid size-12 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                  <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z" />
+                  </svg>
+                </span>
+                <h3 class="mt-4 text-[1.05rem] font-bold text-slate-900">Speaking-first activities</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                  Pair work, role-plays and games mean students talk in every
+                  single lesson &mdash; not just at exam time.
+                </p>
+                <a
+                  class="group mt-4 inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition-colors hover:text-blue-800"
+                  href="curriculum.html"
+                >
+                  Browse the curriculum
+                  <svg class="size-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Testimonials ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Testimonials
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            Real teachers. Real impact.
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            Join the teachers who got their evenings &mdash; and their love of
+            teaching &mdash; back.
+          </p>
+
+          <div
+            id="testi-slider"
+            class="relative mx-auto mt-10 max-w-[760px]"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Teacher testimonials"
+          >
+            <div id="testi-viewport" class="cursor-grab overflow-hidden outline-none" tabindex="0">
+              <div id="testi-track" class="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+
+                <div class="w-full shrink-0 px-1 sm:px-2" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                  <figure class="relative flex h-full flex-col rounded-[28px] border border-[#F5D6E4] bg-[#FDF2F8] p-7 shadow-[0_24px_50px_-24px_rgba(15,27,76,0.28)] sm:p-9">
+                    <span class="pointer-events-none absolute top-5 right-7 font-serif text-6xl leading-none text-[#F1B8D0] select-none" aria-hidden="true">&rdquo;</span>
+                    <div class="flex items-center gap-4">
+                      <span class="grid size-14 shrink-0 place-items-center rounded-full bg-[#F9D3E5] text-base font-extrabold text-[#A63D6E] ring-4 ring-white" aria-hidden="true">AF</span>
+                      <div>
+                        <p class="text-[0.95rem] font-bold text-slate-900">Ana Ferreira</p>
+                        <p class="text-xs text-slate-500">English Teacher &middot; Portugal</p>
+                        <div class="mt-1.5 flex items-center gap-0.5" aria-label="5 out of 5 stars">
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <blockquote class="mt-6 flex-1">
+                      <p class="text-[1.05rem] leading-relaxed font-medium text-slate-700 italic">
+                        &ldquo;I used to lose my Sundays to lesson planning. Now my
+                        week is planned before Monday &mdash; and I actually enjoy
+                        teaching again.&rdquo;
+                      </p>
+                    </blockquote>
+                  </figure>
+                </div>
+
+                <div class="w-full shrink-0 px-1 sm:px-2" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                  <figure class="relative flex h-full flex-col rounded-[28px] border border-[#C7DDF3] bg-[#EDF4FC] p-7 shadow-[0_24px_50px_-24px_rgba(15,27,76,0.28)] sm:p-9">
+                    <span class="pointer-events-none absolute top-5 right-7 font-serif text-6xl leading-none text-[#A5C8EE] select-none" aria-hidden="true">&rdquo;</span>
+                    <div class="flex items-center gap-4">
+                      <span class="grid size-14 shrink-0 place-items-center rounded-full bg-[#DBEAFE] text-base font-extrabold text-blue-700 ring-4 ring-white" aria-hidden="true">DC</span>
+                      <div>
+                        <p class="text-[0.95rem] font-bold text-slate-900">Daniel Costa</p>
+                        <p class="text-xs text-slate-500">English Teacher &middot; Brazil</p>
+                        <div class="mt-1.5 flex items-center gap-0.5" aria-label="5 out of 5 stars">
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <blockquote class="mt-6 flex-1">
+                      <p class="text-[1.05rem] leading-relaxed font-medium text-slate-700 italic">
+                        &ldquo;The videos and speaking games have my students talking
+                        from the first five minutes. Engagement is up in every
+                        class.&rdquo;
+                      </p>
+                    </blockquote>
+                  </figure>
+                </div>
+
+                <div class="w-full shrink-0 px-1 sm:px-2" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                  <figure class="relative flex h-full flex-col rounded-[28px] border border-[#D6EBC1] bg-[#F2F9E9] p-7 shadow-[0_24px_50px_-24px_rgba(15,27,76,0.28)] sm:p-9">
+                    <span class="pointer-events-none absolute top-5 right-7 font-serif text-6xl leading-none text-[#BFE09A] select-none" aria-hidden="true">&rdquo;</span>
+                    <div class="flex items-center gap-4">
+                      <span class="grid size-14 shrink-0 place-items-center rounded-full bg-[#E0F2C8] text-base font-extrabold text-[#5B7A1E] ring-4 ring-white" aria-hidden="true">EW</span>
+                      <div>
+                        <p class="text-[0.95rem] font-bold text-slate-900">Emma Walsh</p>
+                        <p class="text-xs text-slate-500">English Teacher &middot; Poland</p>
+                        <div class="mt-1.5 flex items-center gap-0.5" aria-label="5 out of 5 stars">
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                          <svg class="size-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <blockquote class="mt-6 flex-1">
+                      <p class="text-[1.05rem] leading-relaxed font-medium text-slate-700 italic">
+                        &ldquo;As a new teacher, the lesson notes were a lifeline. I
+                        walked into class feeling prepared from my very first
+                        week.&rdquo;
+                      </p>
+                    </blockquote>
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+
+            <button
+              id="testi-prev"
+              type="button"
+              aria-label="Previous testimonial"
+              class="absolute top-1/2 -left-4 z-10 hidden size-11 -translate-y-1/2 place-items-center rounded-full bg-white text-slate-700 shadow-lg shadow-slate-900/15 transition-all hover:bg-slate-50 hover:text-blue-700 lg:-left-6 sm:grid"
+            >
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+            </button>
+            <button
+              id="testi-next"
+              type="button"
+              aria-label="Next testimonial"
+              class="absolute top-1/2 -right-4 z-10 hidden size-11 -translate-y-1/2 place-items-center rounded-full bg-white text-slate-700 shadow-lg shadow-slate-900/15 transition-all hover:bg-slate-50 hover:text-blue-700 lg:-right-6 sm:grid"
+            >
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+
+            <div id="testi-dots" class="mt-7 flex items-center justify-center gap-2">
+              <button type="button" class="testi-dot testi-dot-active" aria-label="Go to testimonial 1" aria-current="true"></button>
+              <button type="button" class="testi-dot" aria-label="Go to testimonial 2" aria-current="false"></button>
+              <button type="button" class="testi-dot" aria-label="Go to testimonial 3" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+      <!-- CTA band -->
+      <section id="book-demo" class="bg-[#0F1B4C] py-16 lg:py-20">
+        <div class="mx-auto w-full px-6 text-center sm:px-12 lg:px-20">
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-200 uppercase">
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            For teachers &amp; schools
+          </p>
+
+          <h2 class="mx-auto mt-5 max-w-4xl text-[clamp(1.9rem,3.4vw,2.7rem)] leading-[1.12] font-extrabold tracking-tight text-white">
+            Ready to make a bigger impact with English education?
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-3xl text-[1.05rem] leading-relaxed text-slate-300/90">
+            Join over 1,000 teachers and 100 schools saving hours every week with a
+            curriculum that&rsquo;s ready from day one.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+            <a
+              class="btn rounded-full bg-white px-7 py-3.5 text-[0.95rem] text-[#0F1B4C] shadow-lg shadow-black/20 hover:-translate-y-px hover:bg-blue-50 max-[480px]:w-full"
+              href="mailto:hello@remtoo.com?subject=Demo%20request"
+            >
+              Book a Demo
+              <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" />
+              </svg>
+            </a>
+            <a
+              class="btn rounded-full border-[1.5px] border-white/30 px-7 py-3.5 text-[0.95rem] text-white hover:-translate-y-px hover:border-white/60 hover:bg-white/5 max-[480px]:w-full"
+              href="free-sample.html"
+              >Explore Free Lessons</a
+            >
+          </div>
+
+          <p class="mt-6 text-[13px] font-medium text-slate-400">
+            No credit card required &nbsp;&middot;&nbsp; Free sample lessons &nbsp;&middot;&nbsp; Setup in minutes
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer bottom -->
+      <div class="bg-[#0B1433] py-12 lg:py-14">
+        <div class="mx-auto w-full px-6 sm:px-12 lg:px-20">
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+            <div>
+              <a class="flex items-center gap-2.5" href="index.html" aria-label="Remtoo home">
+                <span
+                  class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+                  aria-hidden="true"
+                  >R</span
+                >
+                <span class="text-[1.2rem] font-extrabold tracking-tight text-white">Remtoo</span>
+              </a>
+              <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
+                A complete, ready-to-teach English curriculum from A1 to C1 &mdash; lessons,
+                videos, activities and assessments in one place.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Product</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="curriculum.html">Curriculum</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="whats-included.html">What&rsquo;s Included</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="free-sample.html">Free Sample</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">For Educators</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-teachers.html">For Teachers</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html">For Schools</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Book a Demo</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Get in Touch</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li>
+                  <a class="inline-flex items-center gap-2 text-slate-400 transition-colors hover:text-white" href="mailto:hello@remtoo.com">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    hello@remtoo.com
+                  </a>
+                </li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Request a walkthrough</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
+            <p class="text-[13px] text-slate-500">&copy; 2026 Remtoo. All rights reserved.</p>
+            <p class="text-[13px] font-semibold text-slate-400">Teach English. Create brighter futures.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

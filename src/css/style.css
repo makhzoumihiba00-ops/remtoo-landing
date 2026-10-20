@@ -37,4 +37,32 @@
     @apply border-blue-600/70 bg-white text-slate-900 shadow-sm
       hover:-translate-y-px hover:border-blue-700 hover:bg-blue-50;
   }
+
+  /* Testimonial carousel */
+  .testi-no-anim {
+    transition: none !important;
+  }
+  .testi-grabbing {
+    cursor: grabbing;
+  }
+  .testi-dot {
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    border-radius: 9999px;
+    background: #cbd5e1;
+    transition: all 0.3s;
+  }
+  .testi-dot:hover {
+    background: #94a3b8;
+  }
+  .testi-dot-active {
+    width: 28px;
+    background: #2563eb;
+  }
+  .testi-dot-active:hover {
+    background: #2563eb;
+  }
 }
