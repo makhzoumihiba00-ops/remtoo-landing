@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Schools — Remtoo</title>
+    <meta
+      name="description"
+      content="Remtoo for schools and institutions: a complete CEFR-aligned English curriculum, ready-to-teach lessons, teacher training, progress tracking and onboarding support for your whole English department."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='bold' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/site.css?v=R6cY0pH3" />
+    <script type="module" src="./src/js/main.js" defer></script>
+  </head>
+  <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
+    <!-- ================= Header ================= -->
+    <header class="relative border-b border-slate-100 bg-white py-4 lg:py-5">
+      <div class="wrap wrap-wide flex items-center gap-4 lg:gap-5 xl:gap-8">
+        <a
+          class="flex shrink-0 items-center gap-2.5"
+          href="index.html"
+          aria-label="Remtoo home"
+        >
+          <span
+            class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+            aria-hidden="true"
+            >R</span
+          >
+          <span class="text-[1.2rem] font-extrabold tracking-tight text-slate-900 xl:text-[1.35rem]"
+            >Remtoo</span
+          >
+        </a>
+
+        <nav
+          id="site-nav"
+          aria-label="Main navigation"
+          class="hidden flex-col gap-1 absolute top-[calc(100%_+_8px)] right-5 left-5 z-50 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-900/10 lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:gap-1 xl:gap-1.5 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="curriculum.html"
+            >Curriculum</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="whats-included.html"
+            >What&rsquo;s Included</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-blue-700 transition-colors hover:bg-slate-50 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-schools.html"
+            aria-current="page"
+            >For Schools</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="for-teachers.html"
+            >For Teachers</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="pricing.html"
+            >Pricing</a
+          >
+          <a
+            class="rounded-lg px-3.5 py-3 text-base font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900 lg:px-2.5 lg:py-2 lg:text-sm xl:px-3.5 xl:text-[0.925rem]"
+            href="free-sample.html"
+            >Free Sample</a
+          >
+        </nav>
+
+        <div class="ml-auto flex shrink-0 items-center gap-3 lg:ml-0">
+          <a
+            class="btn btn-primary hidden px-5 py-2.5 text-sm sm:inline-flex"
+            href="#book-demo"
+            >Book a Demo</a
+          >
+          <button
+            id="nav-toggle"
+            class="grid size-[42px] cursor-pointer place-items-center rounded-xl border-[1.5px] border-slate-200 bg-white text-slate-900 lg:hidden"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <svg
+              class="icon-open size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <svg
+              class="icon-close size-5 hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            >
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= Page hero ================= -->
+      <section class="relative overflow-hidden bg-[#FAF8F2] py-14 lg:py-20">
+        <div
+          class="pointer-events-none absolute -top-32 -left-32 size-[420px] rounded-full bg-[#EAF2FA] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-28 -bottom-36 size-[460px] rounded-full bg-[#E6F5EE] opacity-80 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <div class="wrap wrap-wide relative z-10 grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          <!-- Left: copy -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-700 uppercase">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              For Schools &amp; Institutions
+            </p>
+
+            <h1 class="mt-5 max-w-2xl text-[clamp(2rem,4.2vw,3.1rem)] leading-[1.1] font-extrabold tracking-tight text-slate-900">
+              Everything Your School Needs to <span class="text-blue-600">Teach English</span>
+            </h1>
+
+            <p class="mt-4 max-w-xl text-lg leading-relaxed text-slate-500">
+              A complete curriculum, lesson plans and teaching resources for your
+              entire English department &mdash; ready from day one.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+              <a
+                class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem] max-[480px]:w-full"
+                href="#book-demo"
+              >
+                Book a Demo
+                <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="13 6 19 12 13 18" />
+                </svg>
+              </a>
+              <a
+                class="btn rounded-full border-[1.5px] border-[#B7D2F8] bg-white px-7 py-3.5 text-[0.95rem] text-blue-700 shadow-sm hover:-translate-y-px hover:border-blue-500 hover:bg-blue-50 max-[480px]:w-full"
+                href="free-sample.html"
+                >Explore Free Lessons</a
+              >
+            </div>
+
+            <p class="mt-6 text-sm font-medium text-slate-500">
+              Trusted by 100+ schools and 1,000+ teachers
+            </p>
+          </div>
+
+          <!-- Right: classroom photo card -->
+          <div class="relative mx-auto w-full max-w-[480px]">
+            <div class="relative overflow-hidden rounded-[28px] border-4 border-white/80 shadow-[0_40px_90px_-24px_rgba(9,18,48,0.55)]">
+              <img
+                src="./assets/images/schools-hero.jpg"
+                alt="Teacher and students in a bright classroom during an English lesson"
+                class="aspect-square w-full object-cover"
+                width="768"
+                height="768"
+              />
+
+              <!-- CEFR badge -->
+              <div class="absolute top-4 right-4 z-20 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg shadow-[#0F1B4C]/25">
+                <span class="size-2 shrink-0 rounded-full bg-green-500"></span>
+                <span class="text-xs font-bold text-slate-900">CEFR-Aligned Levels A1&ndash;C1</span>
+              </div>
+
+              <!-- Engagement card -->
+              <div class="absolute bottom-4 left-4 z-20 flex items-center gap-3 rounded-2xl bg-white p-3 pr-5 shadow-lg shadow-[#0F1B4C]/25">
+                <span class="grid size-10 shrink-0 place-items-center rounded-full bg-blue-600 text-white">
+                  <svg class="ml-0.5 size-4.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20" /></svg>
+                </span>
+                <div>
+                  <p class="text-sm font-bold text-slate-900">Real Classroom Engagement</p>
+                  <p class="text-xs text-slate-500">Active speaking in every session</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Why schools choose Remtoo ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Why Remtoo
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            Why schools choose Remtoo
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            One subscription gives your whole English department a complete, consistent
+            program &mdash; and gives teachers their evenings back.
+          </p>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200/80 p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E1EDFB] text-blue-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <polyline points="12 7 12 12 15.5 14" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Save teachers hours</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Every lesson arrives ready to teach, so teachers stop building materials
+                from scratch and focus on their students.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  570+ ready-to-teach lessons
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Weekly plans and answer keys included
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200/80 p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Consistent quality in every classroom</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Every classroom follows the same CEFR-aligned path, so quality stays high
+                no matter who is teaching.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Standardized A1&ndash;C1 curriculum
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Same unit structure at every level
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200/80 p-6 sm:p-7">
+              <span class="grid size-12 place-items-center rounded-2xl bg-[#FDF3C7] text-amber-700">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Easy to implement</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-500">
+                Your department can be up and running in days &mdash; no migration
+                projects, no IT headaches.
+              </p>
+              <ul class="mt-4 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Teacher onboarding and training
+                </li>
+                <li class="flex items-center gap-2 text-sm text-slate-600">
+                  <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+                  Works alongside your existing course books
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Everything in one platform ================= -->
+      <section class="border-t border-slate-100 py-14 lg:py-20">
+        <div class="wrap wrap-wide grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-700 uppercase">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" />
+                <path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
+              </svg>
+              One Platform
+            </p>
+            <h2 class="mt-5 text-[clamp(1.8rem,3.2vw,2.6rem)] leading-[1.12] font-extrabold tracking-tight text-slate-900">
+              Everything your English department needs in one place
+            </h2>
+            <p class="mt-4 max-w-lg text-[1.05rem] leading-relaxed text-slate-500">
+              Stop juggling textbooks, shared drives and downloads. Remtoo brings your
+              whole English program together, so coordinators can manage it and teachers
+              can simply teach.
+            </p>
+            <a
+              class="group mt-7 inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition-colors hover:text-blue-800"
+              href="whats-included.html"
+            >
+              See what&rsquo;s included
+              <svg class="size-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </a>
+          </div>
+
+          <ul class="grid gap-x-8 gap-y-7 sm:grid-cols-2">
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Complete curriculum</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Five CEFR levels, 52 units and 570+ lessons from A1 to C1.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Video lessons</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Native-speaker videos in every unit model real English.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Interactive activities</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Games, pair work and tasks that keep students engaged.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Progress tracking</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  See how every class and student moves through the levels.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Teacher training</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Workshops and guides that help new teachers start strong.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3.5">
+              <span class="grid size-6 shrink-0 place-items-center rounded-full bg-green-100 text-green-600">
+                <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Certificates</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Motivate students with certificates for every completed level.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= How it works ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Getting Started
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            From first call to first lesson in weeks
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            A guided path that fits your school&rsquo;s schedule &mdash; no disruption to
+            your existing program.
+          </p>
+
+          <div class="relative mt-12">
+            <div class="absolute top-7 right-[16.66%] left-[16.66%] hidden border-t-2 border-dashed border-slate-300 lg:block" aria-hidden="true"></div>
+
+            <div class="grid gap-10 lg:grid-cols-3">
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">1</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Book a demo</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  Tell us about your school and see the full curriculum in a live
+                  walkthrough.
+                </p>
+              </div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">2</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Pilot one class</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  Start with a single class or teacher and see the results for yourself.
+                </p>
+              </div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="grid size-14 place-items-center rounded-full bg-blue-600 text-xl font-extrabold text-white ring-8 ring-[#F8F9FB]">3</span>
+                <h3 class="mt-5 text-[1.05rem] font-bold text-slate-900">Roll out school-wide</h3>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-slate-500">
+                  We train your team and support you as every classroom comes on board.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 flex justify-center">
+            <a class="btn btn-primary rounded-full px-7 py-3.5 text-[0.95rem]" href="#book-demo">
+              Book a Demo
+              <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Onboarding & support ================= -->
+      <section class="border-t border-slate-100 py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <p class="text-center text-xs font-bold tracking-[0.14em] text-slate-500 uppercase">
+            Onboarding &amp; Support
+          </p>
+          <h2 class="mx-auto mt-4 max-w-3xl text-center text-[clamp(1.6rem,2.6vw,2.1rem)] leading-tight font-extrabold tracking-tight text-slate-900">
+            We&rsquo;re with you at every step
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-slate-500">
+            From the first pilot to the whole school, our team helps yours succeed.
+          </p>
+
+          <div class="mt-10 grid gap-x-8 gap-y-9 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Pilot program</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Start small with one class, then scale when you&rsquo;re ready.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                  <path d="M22 10v6" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Teacher training</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Live workshops and video guides get staff confident fast.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Ongoing support</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  A dedicated contact answers questions all year long.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-5.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-[0.95rem] font-bold text-slate-900">Custom branding</h3>
+                <p class="mt-1 text-sm leading-relaxed text-slate-500">
+                  Your logo and colors on certificates and student views.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Testimonial ================= -->
+      <section class="bg-[#F8F9FB] py-14 lg:py-20">
+        <div class="wrap wrap-wide">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="flex items-center justify-center gap-1" aria-hidden="true">
+              <svg class="size-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg class="size-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg class="size-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg class="size-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg class="size-5 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+            </div>
+
+            <blockquote class="mt-6">
+              <p class="text-[clamp(1.15rem,2vw,1.5rem)] leading-relaxed font-medium text-slate-700 italic">
+                &ldquo;Remtoo transformed how our English department works. Teachers save
+                hours every week, and our students are more engaged than ever.&rdquo;
+              </p>
+            </blockquote>
+
+            <div class="mt-8 flex items-center justify-center gap-4">
+              <img
+                src="./assets/images/avatar-sarah.jpg"
+                alt="Sarah Mitchell, English department head"
+                class="size-14 rounded-full object-cover"
+                width="160"
+                height="160"
+                loading="lazy"
+              />
+              <div class="text-left">
+                <p class="text-sm font-bold text-slate-900">Sarah Mitchell</p>
+                <p class="text-sm text-slate-500">English Department Head, Bright Futures Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+      <!-- CTA band -->
+      <section id="book-demo" class="bg-[#0F1B4C] py-16 lg:py-20">
+        <div class="mx-auto w-full px-6 text-center sm:px-12 lg:px-20">
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.14em] text-blue-200 uppercase">
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            For teachers &amp; schools
+          </p>
+
+          <h2 class="mx-auto mt-5 max-w-4xl text-[clamp(1.9rem,3.4vw,2.7rem)] leading-[1.12] font-extrabold tracking-tight text-white">
+            Ready to make a bigger impact with English education?
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-3xl text-[1.05rem] leading-relaxed text-slate-300/90">
+            Join over 1,000 teachers and 100 schools saving hours every week with a
+            curriculum that&rsquo;s ready from day one.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4 max-[480px]:w-full max-[480px]:flex-col">
+            <a
+              class="btn rounded-full bg-white px-7 py-3.5 text-[0.95rem] text-[#0F1B4C] shadow-lg shadow-black/20 hover:-translate-y-px hover:bg-blue-50 max-[480px]:w-full"
+              href="mailto:hello@remtoo.com?subject=Demo%20request"
+            >
+              Book a Demo
+              <svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="13 6 19 12 13 18" />
+              </svg>
+            </a>
+            <a
+              class="btn rounded-full border-[1.5px] border-white/30 px-7 py-3.5 text-[0.95rem] text-white hover:-translate-y-px hover:border-white/60 hover:bg-white/5 max-[480px]:w-full"
+              href="free-sample.html"
+              >Explore Free Lessons</a
+            >
+          </div>
+
+          <p class="mt-6 text-[13px] font-medium text-slate-400">
+            No credit card required &nbsp;&middot;&nbsp; Free sample lessons &nbsp;&middot;&nbsp; Setup in minutes
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer bottom -->
+      <div class="bg-[#0B1433] py-12 lg:py-14">
+        <div class="mx-auto w-full px-6 sm:px-12 lg:px-20">
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+            <div>
+              <a class="flex items-center gap-2.5" href="index.html" aria-label="Remtoo home">
+                <span
+                  class="grid size-10 place-items-center rounded-xl bg-linear-to-br from-blue-400 to-blue-700 text-lg font-extrabold text-white shadow-lg shadow-blue-500/30"
+                  aria-hidden="true"
+                  >R</span
+                >
+                <span class="text-[1.2rem] font-extrabold tracking-tight text-white">Remtoo</span>
+              </a>
+              <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
+                A complete, ready-to-teach English curriculum from A1 to C1 &mdash; lessons,
+                videos, activities and assessments in one place.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Product</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="curriculum.html">Curriculum</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="whats-included.html">What&rsquo;s Included</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="free-sample.html">Free Sample</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">For Educators</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-teachers.html">For Teachers</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html">For Schools</a></li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Book a Demo</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-[13px] font-bold tracking-[0.12em] text-white uppercase">Get in Touch</h3>
+              <ul class="mt-4 list-none space-y-2.5 text-sm">
+                <li>
+                  <a class="inline-flex items-center gap-2 text-slate-400 transition-colors hover:text-white" href="mailto:hello@remtoo.com">
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    hello@remtoo.com
+                  </a>
+                </li>
+                <li><a class="text-slate-400 transition-colors hover:text-white" href="for-schools.html#book-demo">Request a walkthrough</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
+            <p class="text-[13px] text-slate-500">&copy; 2026 Remtoo. All rights reserved.</p>
+            <p class="text-[13px] font-semibold text-slate-400">Teach English. Create brighter futures.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
