@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/site.css?v=pr2026h" />
+    <link rel="stylesheet" href="./assets/site.css?v=cut26b" />
     <script type="module" src="./src/js/main.js" defer></script>
   </head>
   <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
@@ -370,9 +370,9 @@
       <!-- ================= Integrated experience ================= -->
       <section class="border-t border-slate-100 py-14 lg:py-20">
         <div class="wrap wrap-wide">
-          <div class="grid overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_30px_70px_-30px_rgba(15,27,76,0.35)] lg:grid-cols-2">
+          <div class="grid grid-cols-1 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_30px_70px_-30px_rgba(15,27,76,0.35)] lg:grid-cols-2">
             <!-- Left: featured image with overlay badge -->
-            <div class="relative min-h-[280px]">
+            <div class="relative aspect-[4/3] lg:aspect-auto lg:min-h-[280px]">
               <img
                 src="./assets/images/lesson-thumb.jpg"
                 alt="Students speaking English together during a live lesson"
@@ -415,10 +415,12 @@
                       <polyline points="12 6 12 12 16 14" />
                     </svg>
                   </span>
-                  <p class="flex-1 text-sm font-bold text-slate-900">
-                    Class Preparation Time Reduced by 68%
-                  </p>
-                  <span class="shrink-0 rounded-full bg-green-100 px-2.5 py-1 text-[11px] font-bold whitespace-nowrap text-green-700">+2.4 hrs/wk</span>
+                  <div class="flex flex-1 flex-wrap items-center gap-x-4 gap-y-1.5">
+                    <p class="text-sm font-bold text-slate-900">
+                      Class Preparation Time Reduced by 68%
+                    </p>
+                    <span class="shrink-0 rounded-full bg-green-100 px-2.5 py-1 text-[11px] font-bold whitespace-nowrap text-green-700">+2.4 hrs/wk</span>
+                  </div>
                 </div>
 
                 <div class="flex items-center gap-4 rounded-2xl border border-slate-200 p-4">
@@ -428,10 +430,12 @@
                       <polyline points="16 7 22 7 22 13" />
                     </svg>
                   </span>
-                  <p class="flex-1 text-sm font-bold text-slate-900">
-                    CEFR Benchmark Progression 1.4x Faster Band Mastery
-                  </p>
-                  <span class="shrink-0 rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-bold whitespace-nowrap text-blue-700">Validated</span>
+                  <div class="flex flex-1 flex-wrap items-center gap-x-4 gap-y-1.5">
+                    <p class="text-sm font-bold text-slate-900">
+                      CEFR Benchmark Progression 1.4x Faster Band Mastery
+                    </p>
+                    <span class="shrink-0 rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-bold whitespace-nowrap text-blue-700">Validated</span>
+                  </div>
                 </div>
               </div>
             </div>

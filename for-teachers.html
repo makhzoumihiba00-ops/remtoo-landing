@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/site.css?v=pr2026h" />
+    <link rel="stylesheet" href="./assets/site.css?v=cut26b" />
     <script type="module" src="./src/js/main.js" defer></script>
     <script type="module" src="./src/js/for-teachers.js" defer></script>
   </head>
@@ -179,15 +179,53 @@
             </p>
           </div>
 
-          <!-- Right: teacher hero image -->
-          <div class="relative mx-auto w-full max-w-[460px]">
+          <!-- Right: transparent teacher cutout + floating badges -->
+          <div class="relative mx-auto w-full max-w-[400px] py-6">
             <img
-              src="./assets/images/teachers-hero.png"
-              alt="Teacher holding a tablet, surrounded by lesson-ready cards"
-              class="aspect-[4/5] w-full rounded-[28px] border-4 border-white/80 object-cover shadow-[0_40px_90px_-24px_rgba(9,18,48,0.55)]"
-              width="460"
-              height="585"
+              src="./assets/images/teacher-cutout.png"
+              alt="Teacher holding a tablet"
+              class="relative z-[1] mx-auto block h-auto w-full max-h-[560px] object-contain"
+              width="533"
+              height="884"
             />
+
+            <!-- Lesson Ready -->
+            <div class="absolute top-0 -left-1 z-20 flex items-center gap-2.5 rounded-2xl bg-white p-3 pr-4 shadow-lg shadow-[#0F1B4C]/20 sm:-left-8">
+              <span class="grid size-9 shrink-0 place-items-center rounded-full bg-blue-600 text-white">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
+              </span>
+              <div>
+                <p class="text-[13px] leading-tight font-bold text-slate-900">Lesson Ready</p>
+                <p class="text-[11px] leading-tight text-slate-500">Slides, video &amp; answer key</p>
+              </div>
+            </div>
+
+            <!-- Save Time -->
+            <div class="absolute bottom-24 -left-2 z-20 flex items-center gap-2.5 rounded-2xl bg-white p-3 pr-4 shadow-lg shadow-[#0F1B4C]/20 sm:-left-10">
+              <span class="grid size-9 shrink-0 place-items-center rounded-full bg-[#FDF3C7] text-amber-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15.5 14" /></svg>
+              </span>
+              <div>
+                <p class="text-[13px] leading-tight font-bold text-slate-900">Save Time</p>
+                <p class="text-[11px] leading-tight text-slate-500">5+ hours every week</p>
+              </div>
+            </div>
+
+            <!-- Engaged Students -->
+            <div class="absolute right-0 bottom-2 z-20 flex items-center gap-2.5 rounded-2xl bg-white p-3 pl-4 shadow-lg shadow-[#0F1B4C]/20 sm:-right-6">
+              <div class="text-right">
+                <p class="text-[13px] leading-tight font-bold text-slate-900">Engaged Students</p>
+                <p class="text-[11px] leading-tight text-slate-500">Speaking in every lesson</p>
+              </div>
+              <span class="grid size-9 shrink-0 place-items-center rounded-full bg-[#E4F6EC] text-emerald-600">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </section>
