@@ -9,6 +9,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Guards against sideways scroll from any element wider than the
+       viewport. `clip` (not `hidden`) — hidden would turn html/body into
+       a scroll container and break the sticky header. */
+    overflow-x: clip;
   }
 
   /* In-page anchor targets land clear of the sticky header */
@@ -89,6 +93,49 @@
   }
   .testi-dot-active:hover {
     background: #2563eb;
+  }
+}
+
+/* Pricing comparison table: below md each row stacks into a labelled
+   block so phones never need horizontal scrolling. Cells carry
+   data-label="Teacher Plan|School Plan|Custom Plan". Unlayered on
+   purpose — it must beat the cells' own padding/border utilities. */
+@media (max-width: 767px) {
+  .pricing-table thead {
+    display: none;
+  }
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr,
+  .pricing-table th,
+  .pricing-table td {
+    display: block;
+    width: 100%;
+  }
+  .pricing-table tr {
+    border-bottom-width: 0;
+    padding: 0.75rem 1rem;
+  }
+  .pricing-table tr + tr {
+    border-top: 1px solid var(--color-slate-100);
+  }
+  .pricing-table th[scope="row"] {
+    padding: 0 0 0.5rem;
+    border-bottom-width: 0;
+  }
+  .pricing-table td {
+    padding: 0.4rem 0 0.55rem;
+    border-bottom-width: 0;
+  }
+  .pricing-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-slate-500);
+    margin-bottom: 0.125rem;
   }
 }
 

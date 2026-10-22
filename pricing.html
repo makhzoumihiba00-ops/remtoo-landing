@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/site.css?v=cut26e" />
+    <link rel="stylesheet" href="./assets/site.css?v=cut26f" />
     <script type="module" src="./src/js/main.js" defer></script>
   </head>
   <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
@@ -407,8 +407,8 @@
           </div>
 
           <!-- Right: comparison table -->
-          <div class="overflow-x-auto rounded-2xl border border-slate-200/80 bg-white shadow-sm">
-            <table class="w-full min-w-[620px] border-collapse text-left text-sm">
+          <div class="rounded-2xl border border-slate-200/80 bg-white shadow-sm">
+            <table class="pricing-table w-full border-collapse text-left text-sm">
               <thead>
                 <tr class="border-b border-slate-200/90">
                   <th scope="col" class="px-4 py-4 text-[13px] font-bold tracking-[0.1em] text-slate-500 uppercase sm:px-5">
@@ -431,25 +431,25 @@
               <tbody>
                 <tr class="border-b border-slate-200/70">
                   <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Included Curriculum</th>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Core (A1&ndash;B1)</td>
-                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Full (A1&ndash;C1)</td>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Full + extensions</td>
+                  <td data-label="Teacher Plan" class="px-4 py-4 text-slate-600 sm:px-5">Core (A1&ndash;B1)</td>
+                  <td data-label="School Plan" class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Full (A1&ndash;C1)</td>
+                  <td data-label="Custom Plan" class="px-4 py-4 text-slate-600 sm:px-5">Full + extensions</td>
                 </tr>
                 <tr class="border-b border-slate-200/70">
                   <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Teacher Resources</th>
-                  <td class="px-4 py-4 sm:px-5">
+                  <td data-label="Teacher Plan" class="px-4 py-4 sm:px-5">
                     <span class="inline-flex items-center gap-2 text-slate-600">
                       <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
                       Lesson packs
                     </span>
                   </td>
-                  <td class="bg-blue-50/70 px-4 py-4 sm:px-5">
+                  <td data-label="School Plan" class="bg-blue-50/70 px-4 py-4 sm:px-5">
                     <span class="inline-flex items-center gap-2 font-medium text-slate-800">
                       <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
                       Full kit + training
                     </span>
                   </td>
-                  <td class="px-4 py-4 sm:px-5">
+                  <td data-label="Custom Plan" class="px-4 py-4 sm:px-5">
                     <span class="inline-flex items-center gap-2 text-slate-600">
                       <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
                       Everything, tailored
@@ -458,21 +458,21 @@
                 </tr>
                 <tr class="border-b border-slate-200/70">
                   <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Assessment</th>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Quizzes &amp; tests</td>
-                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Tracking + reports</td>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Custom assessments</td>
+                  <td data-label="Teacher Plan" class="px-4 py-4 text-slate-600 sm:px-5">Quizzes &amp; tests</td>
+                  <td data-label="School Plan" class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Tracking + reports</td>
+                  <td data-label="Custom Plan" class="px-4 py-4 text-slate-600 sm:px-5">Custom assessments</td>
                 </tr>
                 <tr class="border-b border-slate-200/70">
                   <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Support</th>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Email support</td>
-                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Priority support</td>
-                  <td class="px-4 py-4 text-slate-600 sm:px-5">Dedicated manager</td>
+                  <td data-label="Teacher Plan" class="px-4 py-4 text-slate-600 sm:px-5">Email support</td>
+                  <td data-label="School Plan" class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Priority support</td>
+                  <td data-label="Custom Plan" class="px-4 py-4 text-slate-600 sm:px-5">Dedicated manager</td>
                 </tr>
                 <tr>
                   <th scope="row" class="px-4 py-4 font-semibold text-slate-900 sm:px-5">Custom Setup</th>
-                  <td class="px-4 py-4 text-slate-300 sm:px-5">&mdash;</td>
-                  <td class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Guided onboarding</td>
-                  <td class="px-4 py-4 sm:px-5">
+                  <td data-label="Teacher Plan" class="px-4 py-4 text-slate-300 sm:px-5">&mdash;</td>
+                  <td data-label="School Plan" class="bg-blue-50/70 px-4 py-4 font-medium text-slate-800 sm:px-5">Guided onboarding</td>
+                  <td data-label="Custom Plan" class="px-4 py-4 sm:px-5">
                     <span class="inline-flex items-center gap-2 text-slate-600">
                       <svg class="size-4 shrink-0 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12.5 9.5 18 20 6.5" /></svg>
                       Full custom setup
