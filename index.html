@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/site.css?v=cut26g" />
+    <link rel="stylesheet" href="./assets/site.css?v=cut26i" />
     <script type="module" src="./src/js/main.js" defer></script>
   </head>
   <body class="overflow-x-clip bg-white font-sans text-slate-600 antialiased">
@@ -160,9 +160,10 @@
 
 
 
-              <!-- Card: Inside every level -->
+              <!-- Card: Inside every level (hidden below md; pushed out past the photo edge
+                   on md+ so it never covers the teacher's face) -->
               <div
-                class="absolute top-[38%] left-0 z-20 w-[200px] -translate-y-1/2 -rotate-2 rounded-3xl border border-[#E3EDF5] bg-white p-4 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.25)] sm:w-[230px]"
+                class="absolute top-[38%] z-20 hidden w-[230px] -translate-y-1/2 -rotate-2 rounded-3xl border border-[#E3EDF5] bg-white p-4 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.25)] md:-left-24 md:block lg:-left-23 xl:-left-24"
               >
                 <h3 class="text-lg font-bold text-[#0F1B4C]">Inside every level</h3>
                 <div class="mt-3.5 space-y-3">
@@ -211,9 +212,10 @@
                 </div>
               </div>
 
-              <!-- Photo card (top right) -->
+              <!-- Photo card (top right, from md up — pushed outward so it clears the face;
+                   170px at lg so it stays inside the grid gap next to the copy column) -->
               <div
-                class="absolute top-16 right-0 z-20 hidden w-[180px] rotate-3 rounded-3xl border border-[#E3EDF5] bg-white p-2.5 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.25)] sm:block"
+                class="absolute top-16 z-20 hidden w-[180px] rotate-3 rounded-3xl border border-[#E3EDF5] bg-white p-2.5 shadow-[0_24px_60px_-18px_rgba(15,27,76,0.25)] md:-right-12 md:block lg:-right-8 lg:w-[170px] xl:-right-12 xl:w-[180px]"
               >
                 <img
                   src="./assets/images/lesson-thumb.jpg"
@@ -228,8 +230,8 @@
                 </p>
               </div>
 
-              <!-- Green script card (bottom right) -->
-              <div class="absolute right-0 bottom-6 z-20 rotate-2 rounded-[22px] bg-[#D3F3E4] px-5 py-4 shadow-[0_18px_40px_-16px_rgba(16,122,87,0.45)]">
+              <!-- Green script card (bottom right; tucked into the corner below md, original spot from md up) -->
+              <div class="absolute right-[-10px] bottom-4 z-20 rotate-2 scale-[0.75] origin-bottom-right rounded-[22px] bg-[#D3F3E4] px-5 py-4 shadow-[0_18px_40px_-16px_rgba(16,122,87,0.45)] md:right-0 md:bottom-6 md:scale-100">
                 <p class="font-hand text-[1.5rem] leading-[1.05] text-emerald-700 italic">Engage.</p>
                 <p class="font-hand text-[1.5rem] leading-[1.05] text-emerald-700 italic">Inspire.</p>
                 <p class="font-hand mt-1 text-[1.7rem] leading-[1.05] font-bold text-[#0F1B4C]">Move forward.</p>
