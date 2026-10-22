@@ -87,3 +87,299 @@
   }
 }
 
+/* ------------------------------------------------------------------ */
+/*  Automatic dark mode — applies when the OS is in dark mode          */
+/*  (prefers-color-scheme: dark).                                      */
+/*                                                                     */
+/*  Tailwind palette utilities read the --color-* theme variables,     */
+/*  so remapping the tokens below re-skins cards, chips, borders and   */
+/*  hover states in one place. Tokens that must keep their light       */
+/*  value — white text on brand buttons/bands, navy (#0F1B4C /         */
+/*  #0B1433) sections, slate-200/300 text and slate-900 shadows on     */
+/*  navy, the blue button/gradient ramp — are left untouched, and      */
+/*  the affected utilities are re-declared by hand in the layered      */
+/*  blocks underneath so variant precedence still holds.               */
+/* ------------------------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    /* Neutral surfaces and text, tinted toward the brand navy */
+    --color-slate-50: #101a30;
+    --color-slate-100: #15213a;
+    --color-slate-400: #9daecb;
+    --color-slate-500: #a9b8cf;
+    --color-slate-600: #c6d2e6;
+    --color-slate-700: #d4def0;
+    --color-slate-800: #e1e9f6;
+
+    /* Pastel cards/chips -> dark tints of the same hue.
+       blue-100 is remapped per-class instead: text-blue-100 lives on
+       the blue gradient hero and must stay light. */
+    --color-blue-50: #12233e;
+    --color-green-50: #10291f;
+    --color-green-100: #143024;
+    --color-emerald-50: #0e2620;
+    --color-emerald-100: #123128;
+    --color-amber-50: #291f0e;
+    --color-amber-100: #2c2410;
+    --color-violet-50: #1a1633;
+    --color-violet-100: #201a3e;
+    --color-purple-50: #201336;
+    --color-red-50: #2c1715;
+    --color-red-100: #331b19;
+    --color-pink-50: #281523;
+    --color-pink-200: #462a3d;
+  }
+
+  html {
+    background-color: #0c1424; /* covers overscroll behind the page */
+  }
+
+  @layer components {
+    .btn-ghost {
+      background-color: #15213a;
+      color: #edf1fa;
+    }
+
+    .testi-dot {
+      background: #2e4165;
+    }
+    .testi-dot:hover {
+      background: #3d5480;
+    }
+  }
+
+  @layer utilities {
+    /* Surfaces (white stays white for text on brand backgrounds) */
+    .bg-white {
+      background-color: #0c1424;
+    }
+    .bg-white\/80 {
+      background-color: rgb(21 33 58 / 0.8);
+    }
+    .bg-white\/95 {
+      background-color: rgb(21 33 58 / 0.95);
+    }
+    .focus\:bg-white:focus {
+      background-color: #0c1424;
+    }
+    .bg-slate-300 {
+      background-color: #33486e;
+    }
+    .bg-blue-100,
+    .hover\:bg-blue-100:hover {
+      background-color: #16294a;
+    }
+    .border-blue-100 {
+      border-color: #16294a;
+    }
+    .from-white {
+      --tw-gradient-from: #0c1424;
+    }
+    .to-\[\#F4F9FD\] {
+      --tw-gradient-to: #101a30;
+    }
+
+    /* Headings and brand-navy text */
+    .text-slate-900,
+    .hover\:text-slate-900:hover {
+      color: #edf1fa;
+    }
+    .text-\[\#0F1B4C\] {
+      color: #edf1fa;
+    }
+
+    /* Accent text, lifted for contrast on dark surfaces */
+    .text-blue-500,
+    .text-\[\#2B6CF6\] {
+      color: #7fa9f9;
+    }
+    .text-blue-600 {
+      color: #6e9ef6;
+    }
+    .text-blue-700,
+    .hover\:text-blue-700:hover {
+      color: #8fb5fa;
+    }
+    .text-blue-800,
+    .hover\:text-blue-800:hover {
+      color: #b4ccfc;
+    }
+    .text-green-600 {
+      color: #5cd395;
+    }
+    .text-green-700 {
+      color: #85dfaf;
+    }
+    .text-green-800 {
+      color: #a9ecc9;
+    }
+    .text-emerald-600 {
+      color: #4ad8a2;
+    }
+    .text-emerald-700 {
+      color: #7ce7c0;
+    }
+    .text-amber-600 {
+      color: #f7ce74;
+    }
+    .text-amber-700 {
+      color: #f3c35f;
+    }
+    .text-violet-600 {
+      color: #b6a2f8;
+    }
+    .text-purple-600 {
+      color: #c6a8fa;
+    }
+    .text-teal-600 {
+      color: #52d8cc;
+    }
+    .text-red-500 {
+      color: #f88787;
+    }
+    .text-\[\#A63D6E\] {
+      color: #f2a1c8;
+    }
+    .text-\[\#5B7DB1\] {
+      color: #a9c4ec;
+    }
+    .text-\[\#5B7A1E\] {
+      color: #c3d98b;
+    }
+
+    /* Borders */
+    .border-slate-100 {
+      border-color: #24334e;
+    }
+    .border-slate-200,
+    .border-slate-200\/70,
+    .border-slate-200\/80,
+    .border-slate-200\/90,
+    .lg\:border-slate-200 {
+      border-color: #2a3c5f;
+    }
+    .border-slate-300 {
+      border-color: #33486e;
+    }
+    .border-blue-200 {
+      border-color: #24406b;
+    }
+    .border-blue-300,
+    .hover\:border-blue-300:hover {
+      border-color: #2b4670;
+    }
+    .border-\[\#E3EDF5\] {
+      border-color: #24334e;
+    }
+    .border-\[\#B7D2F8\] {
+      border-color: #2b4670;
+    }
+    .border-\[\#C7DDF3\] {
+      border-color: #24406b;
+    }
+    .border-\[\#F0E2B8\] {
+      border-color: #46381a;
+    }
+    .border-\[\#C7E9D8\] {
+      border-color: #1d4234;
+    }
+    .border-\[\#F5D6E4\] {
+      border-color: #462a3a;
+    }
+    .border-\[\#D6EBC1\] {
+      border-color: #2a3a16;
+    }
+
+    /* Arbitrary pastel fills -> dark tints (navy #0F1B4C/#0B1433 stay) */
+    .bg-\[\#E4F6EC\] {
+      background-color: #0f2c21;
+    }
+    .bg-\[\#E1EDFB\] {
+      background-color: #12233f;
+    }
+    .bg-\[\#F8F9FB\] {
+      background-color: #101a30;
+    }
+    .bg-\[\#EAF2FA\] {
+      background-color: #11243c;
+    }
+    .bg-\[\#FDF3C7\] {
+      background-color: #2d250f;
+    }
+    .bg-\[\#E6F5EE\] {
+      background-color: #0f281f;
+    }
+    .bg-\[\#DBEAFE\] {
+      background-color: #142a4c;
+    }
+    .bg-\[\#FAF8F2\] {
+      background-color: #1b1810;
+    }
+    .bg-\[\#EFE9FD\] {
+      background-color: #1f1a38;
+    }
+    .bg-\[\#EAF1FE\] {
+      background-color: #12233f;
+    }
+    .bg-\[\#DCF3E8\] {
+      background-color: #0e2a20;
+    }
+    .bg-\[\#F7F8FA\] {
+      background-color: #101a30;
+    }
+    .bg-\[\#FEF8E3\] {
+      background-color: #262110;
+    }
+    .bg-\[\#FDE2E0\] {
+      background-color: #331e1b;
+    }
+    .bg-\[\#F6E8FD\] {
+      background-color: #261a33;
+    }
+    .bg-\[\#EDE7FD\] {
+      background-color: #1e1936;
+    }
+    .bg-\[\#ECF8F1\] {
+      background-color: #0f2820;
+    }
+    .bg-\[\#EAF3FB\] {
+      background-color: #11233e;
+    }
+    .bg-\[\#FDF2F8\] {
+      background-color: #291624;
+    }
+    .bg-\[\#FDE8E6\] {
+      background-color: #321d1a;
+    }
+    .bg-\[\#F9D3E5\] {
+      background-color: #341f31;
+    }
+    .bg-\[\#F4F7FD\] {
+      background-color: #0f1c33;
+    }
+    .bg-\[\#F1F4F9\] {
+      background-color: #101a30;
+    }
+    .bg-\[\#F2F9E9\] {
+      background-color: #182612;
+    }
+    .bg-\[\#EDF4FC\] {
+      background-color: #10203a;
+    }
+    .bg-\[\#E0F2C8\] {
+      background-color: #1c2c10;
+    }
+    .bg-\[\#D7E7F7\] {
+      background-color: #17263f;
+    }
+    .bg-\[\#D7E7F7\]\/70 {
+      background-color: rgb(23 38 63 / 0.7);
+    }
+    .bg-\[\#D3F3E4\] {
+      background-color: #0e2b20;
+    }
+  }
+}
+
